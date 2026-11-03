@@ -39,7 +39,9 @@ def url_publica(v):
     return f"{URL}/storage/v1/object/public/product-images/{v.lstrip('/')}"
 
 os.makedirs(PASTA, exist_ok=True)
-regs = get("registro_precos?select=id,produto_id,mercado_id,preco,foto_comprovante,is_verified,verificacoes,created_at"
+# Mesma consulta da aba Explorar do app (usePriceFeed), só com os campos que a divulgação usa
+regs = get("registro_precos?select=id,preco,foto_comprovante,observacao,is_verified,verificacoes,created_at,"
+           "produto_id,mercado_id,produtos(nome,marca,quantidade,unidade_medida),mercados(nome,bairro)"
            f"&foto_comprovante=not.is.null&order=created_at.desc&limit={LIMITE}")
 def nomes(tabela, ids):
     ids = sorted({i for i in ids if i})
@@ -48,8 +50,10 @@ def nomes(tabela, ids):
         lote = ",".join(ids[k:k + 80])
         for r in get(f"{tabela}?select=id,nome&id=in.({lote})"): out[r["id"]] = r["nome"]
     return out
-prods = nomes("produtos", [r["produto_id"] for r in regs])
-merc = nomes("mercados_public", [r["mercado_id"] for r in regs])
+def nome_produto(r):
+    p = r.get("produtos") or {}
+    partes = [p.get("nome"), p.get("marca"), " ".join(str(x) for x in (p.get("quantidade"), p.get("unidade_medida")) if x)]
+    return " ".join(x for x in partes if x) or None
 indice_path = os.path.join(PASTA, "indice.json")
 indice = {i["id"]: i for i in json.load(open(indice_path))} if os.path.exists(indice_path) else {}
 novos = 0
@@ -62,8 +66,9 @@ for r in regs:
         baixar(url, os.path.join(PASTA, arq))
     except Exception as e:
         print("falhou", url, e); continue
-    indice[r["id"]] = {"id": r["id"], "arquivo": arq, "data": r["created_at"][:10], "produto": prods.get(r["produto_id"]),
-                       "mercado": merc.get(r["mercado_id"]), "preco": float(r["preco"]), "verificado": r["is_verified"],
+    indice[r["id"]] = {"id": r["id"], "arquivo": arq, "data": r["created_at"][:10], "produto": nome_produto(r),
+                       "mercado": (r.get("mercados") or {}).get("nome"), "bairro": (r.get("mercados") or {}).get("bairro"),
+                       "observacao": r.get("observacao"), "preco": float(r["preco"]), "verificado": r["is_verified"],
                        "verificacoes": r["verificacoes"], "url": url}
     novos += 1
 json.dump(sorted(indice.values(), key=lambda x: x["data"], reverse=True), open(indice_path, "w"), ensure_ascii=False, indent=1)
