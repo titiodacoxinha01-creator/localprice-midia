@@ -12,6 +12,18 @@ LIMITE = int(os.environ.get("LIMITE", "300"))
 PASTA = "estudio/assets/fotos-app"
 H = {"apikey": KEY, "Authorization": f"Bearer {KEY}"}
 
+# Os registros de preço só são visíveis para usuários logados: entra com a conta do robô (segredos do GitHub).
+EMAIL, SENHA = os.environ.get("LOCALPRICE_EMAIL"), os.environ.get("LOCALPRICE_SENHA")
+if EMAIL and SENHA:
+    corpo = json.dumps({"email": EMAIL, "password": SENHA}).encode()
+    req = urllib.request.Request(f"{URL}/auth/v1/token?grant_type=password", data=corpo,
+                                 headers={"apikey": KEY, "Content-Type": "application/json"})
+    with urllib.request.urlopen(req, timeout=60) as r:
+        H["Authorization"] = "Bearer " + json.load(r)["access_token"]
+    print("login ok")
+else:
+    print("AVISO: sem os segredos LOCALPRICE_EMAIL e LOCALPRICE_SENHA; só dados públicos (registros não aparecem)")
+
 def get(caminho):
     req = urllib.request.Request(f"{URL}/rest/v1/{caminho}", headers=H)
     with urllib.request.urlopen(req, timeout=60) as r:

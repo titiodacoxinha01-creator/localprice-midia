@@ -22,6 +22,8 @@ jobs:
           SUPABASE_URL: https://uxocshuyrpfyqqauvlfv.supabase.co
           # chave pública (publishable) do app, a mesma que o site usa no navegador
           SUPABASE_KEY: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InV4b2NzaHV5cnBmeXFxYXV2bGZ2Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzAyMzIzMDksImV4cCI6MjA4NTgwODMwOX0.0U1xwt__7XSCxc17ojU67wGmVInCtPKzPgShqZh2EoM
+          LOCALPRICE_EMAIL: ${{ secrets.LOCALPRICE_EMAIL }}
+          LOCALPRICE_SENHA: ${{ secrets.LOCALPRICE_SENHA }}
         run: python3 estudio/ferramentas/buscar_fotos_app.py
       - name: Salvar no repositório
         run: |
