@@ -75,6 +75,18 @@ em.d { font-style: normal; color: #E2231A; }
 .etq .p span { font-size: 60px; vertical-align: 80px; letter-spacing: 0; }
 .etq .dd { display: flex; justify-content: space-between; align-items: center; padding: 10px 30px 26px; font: 800 34px Inter; gap: 20px; }
 .etq .kg { border: 6px solid #E2231A; border-radius: 50%; padding: 10px 18px; white-space: nowrap; }
+.fotos { display: flex; gap: 30px; align-self: stretch; }
+.fcard { flex: 1; min-width: 0; background: #fff; border: 8px solid #111; border-radius: 24px; box-shadow: 12px 12px 0 #111; overflow: hidden; }
+.fcard img { width: 100%; object-fit: cover; display: block; border-bottom: 6px solid #111; }
+.fcard .inf { padding: 14px 20px 18px; }
+.fcard small { display: block; font: 800 30px/1.15 Inter; }
+.fcard small span { font-weight: 600; color: #555; }
+.fcard b { display: block; font: 900 86px/1 Inter; letter-spacing: -3px; margin-top: 8px; white-space: nowrap; }
+.fcard b span { font-size: 40px; letter-spacing: 0; vertical-align: 34px; margin-right: 4px; }
+.fcard i { display: block; font: 800 32px Inter; font-style: normal; margin-top: 6px; white-space: nowrap; }
+.fcard.barato b, .fcard.barato i { color: #1E7A3C; } .fcard.caro b, .fcard.caro i { color: #E2231A; }
+.fcard .sel { display: inline-block; background: #1E7A3C; color: #fff; font: 900 26px Inter; padding: 4px 12px; border-radius: 8px; margin-bottom: 8px; text-transform: uppercase; }
+.fcard.caro .sel { background: #E2231A; }
 .post.cta { background: #1E7A3C; color: #fff; }
 .post.cta .meio { align-items: flex-start; }
 .post.cta h1 { font-size: 104px; }
@@ -131,6 +143,18 @@ def encarte_slide(s, i, n, g):
         partes.append(f'<h1 class="{"m" if s.get("titulo_menor") or tipo in ("lista", "etiqueta", "conta") else ""}">{md(s["titulo"])}</h1>')
     if tipo in ("capa", "etiquetas"):
         partes.append(tags_html(s["tags"]))
+    elif tipo == "fotos":
+        def rot(t):
+            a, _, b = t.partition("|")
+            return md(a) + (f" <span>{md(b)}</span>" if b else "")
+        alt = s.get("altura", 470); cards = []
+        for f in s["fotos"]:
+            p = html.escape(f["preco"]).replace("R$", "").strip()
+            sel = f'<span class="sel">{md(f["selo"])}</span>' if f.get("selo") else ""
+            nota = f"<i>{md(f['nota'])}</i>" if f.get("nota") else ""
+            cards.append(f'<div class="fcard {f.get("cor", "")}"><img src="{img(f["foto"])}" style="height:{alt}px;object-position:{f.get("foco", "50% 50%")}">'
+                         f'<div class="inf">{sel}<small>{rot(f.get("rotulo", ""))}</small><b><span>R$</span>{p}</b>{nota}</div></div>')
+        partes.append(f'<div class="fotos">{"".join(cards)}</div>')
     elif tipo == "conta":
         partes.append(caixa(s["linhas"], s.get("centro")))
     elif tipo == "lista":
@@ -177,7 +201,12 @@ def montar_html(g):
     f = encarte_slide if est == "encarte" else print_slide
     css = CSS_BASE + (CSS_ENCARTE if est == "encarte" else CSS_PRINT)
     corpo = "\n".join(f(s, i + 1, n, g) for i, s in enumerate(g["paginas"]))
-    return f'<!doctype html><html lang="pt-BR"><head><meta charset="utf-8"><style>{css}</style></head><body>{corpo}</body></html>'
+    ajuste = """<script>document.fonts.ready.then(() => document.querySelectorAll('.caixa').forEach(c => {
+  let t = parseFloat(getComputedStyle(c).fontSize);
+  const estoura = () => [...c.querySelectorAll('.l')].some(l => l.scrollWidth > l.clientWidth + 1);
+  while (estoura() && t > 40) { t -= 2; c.style.fontSize = t + 'px'; }
+}));</script>"""
+    return f'<!doctype html><html lang="pt-BR"><head><meta charset="utf-8"><style>{css}</style></head><body>{corpo}{ajuste}</body></html>'
 
 CONFERE = """() => {
   const erros = [];
@@ -207,7 +236,7 @@ def render(g, pasta):
 const {{ chromium }} = require('playwright');
 (async () => {{
   const b = await chromium.launch(); const p = await b.newPage({{ viewport: {{ width: 1080, height: 1350 }} }});
-  await p.goto('file://{caminho}'); await p.evaluate(() => document.fonts.ready); await p.waitForTimeout(150);
+  await p.goto('file://{caminho}'); await p.evaluate(() => document.fonts.ready); await p.waitForTimeout(400);
   const erros = await p.evaluate({CONFERE});
   const els = await p.$$('.post'); let i = 1;
   for (const e of els) {{ await e.screenshot({{ path: '{pasta}/pg-' + String(i).padStart(2, '0') + '.png' }}); i++; }}

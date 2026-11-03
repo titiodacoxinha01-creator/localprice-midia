@@ -1,0 +1,177 @@
+{
+  "id": "2026-11-06-precos-reais",
+  "estilo": "encarte",
+  "aviso": "Preços da comunidade; podem variar",
+  "paginas": [
+    {
+      "tipo": "fotos",
+      "faixa": "Preços reais de Altamira",
+      "titulo": "Mesmo produto.\n**Quase o dobro.**",
+      "altura": 400,
+      "fotos": [
+        {
+          "foto": "fotos-app/2026-09-01-1eb28c24.jpg",
+          "rotulo": "Anchieta",
+          "preco": "12,50",
+          "cor": "barato",
+          "foco": "50% 45%"
+        },
+        {
+          "foto": "fotos-app/2026-09-01-0438280e.jpg",
+          "rotulo": "Mercantil Quero",
+          "preco": "24,65",
+          "cor": "caro",
+          "foco": "50% 45%"
+        }
+      ],
+      "selo": "Erva-mate tereré 500 g, mesmo dia",
+      "aviso": "Registrado em 01/09/2026"
+    },
+    {
+      "tipo": "lista",
+      "faixa": "Por que muda tanto?",
+      "titulo": "O preço não é igual em todo lugar.",
+      "itens": [
+        "Cada mercado define o próprio preço",
+        "Promoção e estoque mudam toda semana",
+        "Hortifrúti varia com o peso e a safra"
+      ],
+      "selo": "Por isso: compare antes de sair"
+    },
+    {
+      "tipo": "fotos",
+      "faixa": "Caso 1: mesmo dia, mesmo produto",
+      "titulo": "Erva-mate Barão\ntereré 500 g",
+      "titulo_menor": true,
+      "fotos": [
+        {
+          "foto": "fotos-app/2026-09-01-1eb28c24.jpg",
+          "rotulo": "Anchieta|· Centro",
+          "preco": "12,50",
+          "cor": "barato",
+          "selo": "Mais barato",
+          "foco": "50% 45%"
+        },
+        {
+          "foto": "fotos-app/2026-09-01-0438280e.jpg",
+          "rotulo": "Mercantil Quero|· Centro",
+          "preco": "24,65",
+          "cor": "caro",
+          "foco": "50% 45%"
+        }
+      ],
+      "selo": "R$ 12,15 de diferença",
+      "aviso": "Registrado em 01/09/2026"
+    },
+    {
+      "tipo": "fotos",
+      "faixa": "Caso 2: hortifrúti",
+      "titulo": "Acelga: olhe o\npreço do quilo",
+      "titulo_menor": true,
+      "fotos": [
+        {
+          "foto": "fotos-app/2026-10-19-ba788cea.jpg",
+          "rotulo": "Primavera II|· 19/10",
+          "preco": "5,99",
+          "nota": "por kg",
+          "cor": "barato",
+          "selo": "Mais barato",
+          "foco": "50% 55%"
+        },
+        {
+          "foto": "fotos-app/2026-10-03-eaea19ce.jpg",
+          "rotulo": "Nossa Horta|· 03/10",
+          "preco": "8,99",
+          "nota": "por kg",
+          "cor": "caro",
+          "foco": "50% 60%"
+        }
+      ],
+      "selo": "50% mais cara por quilo",
+      "aviso": "Datas diferentes: 03/10 e 19/10/2026"
+    },
+    {
+      "tipo": "fotos",
+      "faixa": "Caso 3: pegadinha",
+      "titulo": "Água sanitária:\na maior saiu **mais barata**",
+      "titulo_menor": true,
+      "fotos": [
+        {
+          "foto": "fotos-app/2026-09-11-8e0b4d93.jpg",
+          "rotulo": "Campeiro|· 1 litro",
+          "preco": "2,79",
+          "nota": "= R$ 2,79 o litro",
+          "cor": "caro",
+          "foco": "50% 92%"
+        },
+        {
+          "foto": "fotos-app/2026-09-17-0791a479.jpg",
+          "rotulo": "Mix Mateus|· 2 litros",
+          "preco": "5,15",
+          "nota": "= R$ 2,58 o litro",
+          "cor": "barato",
+          "selo": "Mais barato",
+          "foco": "50% 78%"
+        }
+      ],
+      "selo": "Divida pelo litro",
+      "aviso": "Marcas diferentes · 11/09 e 17/09/2026",
+      "altura": 420
+    },
+    {
+      "tipo": "fotos",
+      "faixa": "Caso 4: cartela de 20 x de 30",
+      "titulo": "Ovos: compare\no preço de cada um",
+      "titulo_menor": true,
+      "fotos": [
+        {
+          "foto": "fotos-app/2026-09-09-8e0c9619.jpg",
+          "rotulo": "Mix Mateus|· 20 ovos",
+          "preco": "10,99",
+          "nota": "= R$ 0,55 o ovo",
+          "cor": "barato",
+          "selo": "Mais barato",
+          "foco": "50% 25%"
+        },
+        {
+          "foto": "fotos-app/2026-09-17-248da291.jpg",
+          "rotulo": "Campeiro|· 30 ovos",
+          "preco": "19,20",
+          "nota": "= R$ 0,64 o ovo",
+          "cor": "caro",
+          "foco": "50% 68%"
+        }
+      ],
+      "selo": "Divida pela quantidade",
+      "aviso": "Marcas diferentes · 09/09 e 17/09/2026"
+    },
+    {
+      "tipo": "conta",
+      "faixa": "As 3 contas que economizam",
+      "titulo": "Antes de pôr no carrinho:",
+      "linhas": [
+        "Preço ÷ peso = **R$ do quilo**",
+        "Preço ÷ litros = **R$ do litro**",
+        "Preço ÷ unidades = **R$ de cada**"
+      ],
+      "selo": "Leva 10 segundos no celular"
+    },
+    {
+      "tipo": "lista",
+      "faixa": "Como usar o LocalPrice",
+      "titulo": "Antes de sair de casa:",
+      "itens": [
+        "Procure o produto no app",
+        "Veja o preço em cada mercado e a data",
+        "Achou diferente? Fotografe e registre"
+      ],
+      "selo": "É de graça"
+    },
+    {
+      "tipo": "cta",
+      "titulo": "Salva e\nmanda pra quem\nfaz as compras.",
+      "texto": "Todos esses preços foram registrados por vizinhos no LocalPrice. **Quanto mais gente registra, mais Altamira economiza.**",
+      "selo": "Cadastro grátis: localprice.com.br"
+    }
+  ]
+}
