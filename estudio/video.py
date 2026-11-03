@@ -112,11 +112,11 @@ def preparar(trab, foto):
     x, y = (r.width - W) // 2, (r.height - H) // 2
     r = r.crop((x, y, x + W, y + H)); r.save(f"{trab}/foto.jpg", quality=92)
     r.filter(ImageFilter.GaussianBlur(28)).point(lambda v: int(v * 0.5)).save(f"{trab}/fundo_blur.png")
-    logo = Image.open(os.path.join(ASSETS, "logos/04-horizontal-branca.png")).convert("RGBA")
-    logo.resize((700, int(logo.height * 700 / logo.width)), Image.LANCZOS).save(f"{trab}/plate.png")
-    selo = Image.open(os.path.join(ASSETS, "logos/03-simbolo-branco.png")).convert("RGBA")
-    selo = selo.resize((74, int(selo.height * 74 / selo.width)), Image.LANCZOS)
-    selo.putalpha(selo.split()[3].point(lambda v: int(v * 0.9))); selo.save(f"{trab}/selo.png")
+    # logo sempre nas cores originais sobre branco: etiqueta de preço no cartão final, selo redondo como marca d'água
+    logo = Image.open(os.path.join(ASSETS, "logos/etiqueta-logo.png")).convert("RGBA")
+    logo.resize((820, int(logo.height * 820 / logo.width)), Image.LANCZOS).save(f"{trab}/plate.png")
+    selo = Image.open(os.path.join(ASSETS, "logos/selo-simbolo.png")).convert("RGBA")
+    selo.resize((112, 112), Image.LANCZOS).save(f"{trab}/selo.png")
 
 def cena_foto(trab, nome, dur, z0=1.0, z1=1.1, cx=566, cy=1100, escura=False):
     n = int(round(dur * FPS)); z = ease(0, dur, z0, z1, f"(on/{FPS})")
@@ -167,7 +167,7 @@ def cena_resultado(trab, nome, dur):
 def cena_fim(trab, nome, dur):
     pw = Image.open(f"{trab}/plate.png").width
     vf = (f"color=c={VERDE}:s={W}x{H}:r={FPS}:d={dur}[bg];[1:v]format=rgba,fade=in:st=0.1:d=0.25:alpha=1[pl];"
-          f"[bg][pl]overlay=x={(W - pw) // 2}:y='300+260*pow(max(0,1-t/0.5),3)':shortest=1,format=yuv420p[v]")
+          f"[bg][pl]overlay=x={(W - pw) // 2}:y='260+260*pow(max(0,1-t/0.5),3)':shortest=1,format=yuv420p[v]")
     run(["ffmpeg", "-y", "-loglevel", "error", "-f", "lavfi", "-i", "nullsrc", "-loop", "1", "-i", f"{trab}/plate.png",
          "-filter_complex", vf, "-map", "[v]", "-t", f"{dur}", *enc(f"{trab}/{nome}.mp4")])
     return dur
@@ -287,7 +287,7 @@ def reel(cfg):
     fim_em = next((st[i] for i, c in enumerate(cfg["cenas"]) if c["tipo"] == "fim"), total)
     out = os.path.join(pasta, f"{cfg['id']}.mp4"); tmp = f"{trab}/tmp.mp4"
     run(["ffmpeg", "-y", "-loglevel", "error", "-i", f"{trab}/montado.mp4", "-i", f"{trab}/audio.wav", "-loop", "1", "-i", f"{trab}/selo.png", "-filter_complex",
-         f"[0:v][2:v]overlay=x=966:y=96:shortest=1:enable='lt(t,{fim_em:.2f})'[w];[w]ass={trab}/textos.ass:fontsdir={FONTES}[v]",
+         f"[0:v][2:v]overlay=x=944:y=72:shortest=1:enable='lt(t,{fim_em:.2f})'[w];[w]ass={trab}/textos.ass:fontsdir={FONTES}[v]",
          "-map", "[v]", "-map", "1:a", "-c:v", "libx264", "-preset", "veryfast", "-crf", "19", "-r", str(FPS), "-c:a", "aac", "-b:a", "192k", "-shortest", tmp])
     run(["ffmpeg", "-y", "-loglevel", "error", "-i", tmp, "-c:v", "copy", "-af", "loudnorm=I=-14:TP=-1.5:LRA=11", "-c:a", "aac", "-b:a", "192k",
          "-movflags", "+faststart", out])

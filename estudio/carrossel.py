@@ -47,7 +47,7 @@ CSS_ENCARTE = """
   font: 900 52px Nunito; text-transform: uppercase; padding: 0 40px; text-align: center; }
 .meio { flex: 1; display: flex; flex-direction: column; justify-content: space-evenly; align-items: center; padding: 30px 60px; min-height: 0; }
 .rod { flex: none; height: 120px; padding: 0 70px; display: flex; align-items: center; justify-content: space-between; font: 700 30px Inter; }
-.rod img { height: 64px; }
+.rod img { height: 104px; transform: rotate(-3deg); margin-right: -14px; }  /* etiqueta branca com o logo original */
 .num { font: 900 34px Inter; background: #212121; color: #FCD269; border-radius: 40px; padding: 8px 22px; }
 h1 { align-self: stretch; font: 900 108px/0.95 Nunito; letter-spacing: -5px; text-transform: uppercase; }
 h1.m { font-size: 82px; letter-spacing: -3px; line-height: 1; }
@@ -96,7 +96,7 @@ em.d { font-style: normal; color: #EF4343; }
 .post.cta .texto { font: 700 58px/1.2 Inter; }
 .post.cta .texto em.d { color: #FCD269; }
 .post.cta .selo { background: #FCD269; color: #212121; font-size: 52px; }
-.post.cta .rod { color: #fff; } .post.cta .num { background: #FCD269; color: #212121; }
+.post.cta .rod { color: #fff; height: 190px; } .post.cta .rod img { height: 170px; } .post.cta .num { background: #FCD269; color: #212121; }
 """.replace("CHECK", CHECK)
 
 CSS_PRINT = """
@@ -179,7 +179,7 @@ def encarte_slide(s, i, n, g):
     faixa = f'<div class="faixa">{md(s["faixa"])}</div>' if s.get("faixa") and tipo != "cta" else ""
     esq = "Arrasta pro lado &rarr;" if i == 1 else f'<span class="num">{i}/{n}</span>'
     aviso = "" if tipo == "cta" else md(s.get("aviso", g.get("aviso", "")))
-    logo = img("logos/04-horizontal-branca.png" if tipo == "cta" else "logos/02-horizontal-colorida.png")
+    logo = img("logos/etiqueta-logo.png")  # logo sempre nas cores originais, sobre a etiqueta branca
     return (f'<div class="post{" cta" if tipo == "cta" else ""}">{faixa}<div class="meio">{"".join(partes)}</div>'
             f'<div class="rod"><span>{esq}</span><span>{aviso}</span><img src="{logo}"></div></div>')
 
