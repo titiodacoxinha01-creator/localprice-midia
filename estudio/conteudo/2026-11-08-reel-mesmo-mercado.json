@@ -1,0 +1,26 @@
+{
+  "id": "2026-11-08-reel-mesmo-mercado",
+  "foto": "detergente-limpol-599.jpg",
+  "voz": "narracao-tutorial.wav",
+  "cenas": [
+    {"tipo": "foto", "dur": 5.1, "zoom": [1.0, 1.1], "foco": [566, 1500], "voz": [0.0, 5.1],
+     "textos": [
+       {"t": 0.15, "estilo": "giga", "texto": "R$ 5,99", "pos": [70, 290], "alinhar": "esq"},
+       {"t": 0.5, "estilo": "grande", "texto": "aqui.", "pos": [70, 440], "alinhar": "esq", "efeito": "fade"},
+       {"t": 2.4, "estilo": "giga", "texto": "**R$ 2,50**", "pos": [70, 640], "alinhar": "esq"},
+       {"t": 2.75, "estilo": "grande", "texto": "ali do lado.", "pos": [70, 790], "alinhar": "esq", "efeito": "fade"},
+       {"t": 3.4, "estilo": "sub", "texto": "Mesmo detergente, em Altamira.", "pos": [70, 930], "alinhar": "esq", "efeito": "fade"}],
+     "circulo": {"t": 0.8, "pos": [566, 1690], "tam": [640, 330]}},
+    {"tipo": "fundo", "dur": 3.8,
+     "textos": [
+       {"t": 0.1, "estilo": "medio", "texto": "**O erro que faz você**", "pos": [540, 640], "efeito": "fade"},
+       {"t": 0.1, "estilo": "medio", "texto": "**pagar mais caro:**", "pos": [540, 730], "efeito": "fade"},
+       {"t": 0.9, "estilo": "grande", "texto": "comprar tudo", "pos": [540, 930]},
+       {"t": 1.1, "estilo": "grande", "texto": "no mesmo", "pos": [540, 1060]},
+       {"t": 1.3, "estilo": "grande", "texto": "**mercado.**", "pos": [540, 1190]}]},
+    {"tipo": "resultado", "dur": 7.4, "voz": [17.25, 24.65],
+     "textos": [{"t": 0.0, "estilo": "medio", "texto": "No app, você vê antes", "pos": [540, 240]}],
+     "selo": {"t": 4.4, "pos": [820, 470], "linha1": "economia de", "linha2": "R$ 3,49"}},
+    {"tipo": "fim", "dur": 5.75, "voz": [24.65, 30.35], "aviso": "Preços informados pela comunidade em 29/10/2026; podem variar."}
+  ]
+}

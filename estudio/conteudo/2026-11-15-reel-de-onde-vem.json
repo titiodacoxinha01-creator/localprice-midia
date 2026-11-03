@@ -1,0 +1,25 @@
+{
+  "id": "2026-11-15-reel-de-onde-vem",
+  "foto": "detergente-limpol-599.jpg",
+  "voz": "narracao-tutorial.wav",
+  "cenas": [
+    {"tipo": "foto", "dur": 4.0, "zoom": [1.0, 1.1], "foco": [566, 1500],
+     "textos": [
+       {"t": 0.1, "estilo": "grande", "texto": "Esse preço", "pos": [70, 300], "alinhar": "esq"},
+       {"t": 0.6, "estilo": "grande", "texto": "no app quem", "pos": [70, 430], "alinhar": "esq", "efeito": "fade"},
+       {"t": 1.0, "estilo": "grande", "texto": "colocou foi", "pos": [70, 560], "alinhar": "esq", "efeito": "fade"},
+       {"t": 1.6, "estilo": "giga", "tam": 160, "texto": "**um vizinho.**", "pos": [70, 720], "alinhar": "esq"}],
+     "circulo": {"t": 0.5, "pos": [566, 1690], "tam": [640, 330]}},
+    {"tipo": "tela", "tela": "menu", "voz": [8.15, 10.85], "passo": {"n": "1", "l1": "Toque no + e em", "l2": "“Registrar preço”"}},
+    {"tipo": "tela", "tela": "foto", "voz": [10.85, 12.6], "passo": {"n": "2", "l1": "Fotografe", "l2": "a etiqueta"}},
+    {"tipo": "tela", "tela": "leitura", "voz": [12.6, 15.35], "passo": {"n": "3", "l1": "O app lê produto", "l2": "e preço sozinho"}},
+    {"tipo": "tela", "tela": "mercado", "voz": [15.35, 17.25], "passo": {"n": "4", "l1": "Escolha o mercado", "l2": "e publique"}},
+    {"tipo": "fundo", "dur": 4.6,
+     "textos": [
+       {"t": 0.1, "estilo": "grande", "tam": 96, "texto": "Depois, outras", "pos": [540, 560]},
+       {"t": 0.3, "estilo": "grande", "tam": 96, "texto": "pessoas confirmam", "pos": [540, 680]},
+       {"t": 0.5, "estilo": "grande", "tam": 96, "texto": "**ou contestam.**", "pos": [540, 800]}],
+     "caixa": {"t": 1.9, "y": 1100, "linhas": ["Quem registra ganha pontos", "e sobe no ranking do bairro"]}},
+    {"tipo": "fim", "dur": 5.75, "voz": [24.65, 30.35]}
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "id": "2026-11-11-pacote-economico",
+  "estilo": "encarte",
+  "aviso": "Valores ilustrativos",
+  "paginas": [
+    {"tipo": "capa", "faixa": "Pegadinha de mercado", "titulo": "Pacote econômico?\n**Nem sempre.**",
+     "tags": [{"rotulo": "1 kg", "preco": "6,00"}, {"rotulo": "\"Econômico\"", "preco": "32,00", "cor": "vermelho"}],
+     "selo": "Qual sai mais barato?"},
+    {"tipo": "conta", "faixa": "A conta que ninguém faz", "titulo": "Divida o preço\npelo peso.", "centro": true,
+     "linhas": ["Preço", "÷ peso", "++= preço por quilo++"], "selo": "Leva 10 segundos no celular"},
+    {"tipo": "etiquetas", "faixa": "Pacote de 1 kg", "tags": [{"rotulo": "Pacote 1 kg", "preco": "6,00"}],
+     "linhas": ["R$ 6,00 ÷ 1 kg", "++= R$ 6,00 o quilo++"], "selo": "Guarda esse número"},
+    {"tipo": "etiquetas", "faixa": "Pacote \"econômico\" de 5 kg", "tags": [{"rotulo": "Pacote 5 kg", "preco": "32,00", "cor": "vermelho"}],
+     "linhas": ["R$ 32,00 ÷ 5 kg", "**= R$ 6,40 o quilo**"],
+     "selo": "R$ 0,40 a mais por quilo", "selo_vermelho": true},
+    {"tipo": "conta", "faixa": "Resultado", "titulo": "O \"econômico\"\nsai **mais caro.**",
+     "linhas": ["5 pacotes de 1 kg = ++R$ 30,00++", "1 pacote de 5 kg = **R$ 32,00**"], "selo": "R$ 2,00 a mais"},
+    {"tipo": "etiqueta", "faixa": "Dica de etiqueta", "titulo": "Muitas etiquetas já mostram o preço por quilo. Procure aqui:",
+     "oferta": "OFERTA", "preco": "32,00", "produto": "ARROZ TIPO 1 5KG", "destaque": "R$ 6,40/kg", "aviso": "Exemplo ilustrativo"},
+    {"tipo": "lista", "faixa": "Quando o pacote grande vale",
+     "itens": ["O preço por quilo é menor", "Você usa tudo antes de vencer", "Cabe no orçamento do mês sem apertar"],
+     "selo": "Se não, leva o pequeno."},
+    {"tipo": "cta", "titulo": "Salva pra\npróxima\ncompra.", "texto": "E manda pra quem faz as compras aí. **Essa conta economiza todo mês.**",
+     "selo": "Compare em localprice.com.br"}
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "id": "2026-11-04-mercado-que-falta",
+  "estilo": "print",
+  "paginas": [
+    {"tipo": "post", "texto": "Qual mercado de Altamira ainda ==não está== no LocalPrice?", "sub": "Responde aí. O mais pedido entra primeiro.",
+     "meta": ["Altamira, PA", "Comentar · Enviar"]},
+    {"tipo": "lista", "texto": "Já estão no app:", "grande": false,
+     "itens": ["Mercantil Quero", "Anchieta", "Milênio Express", "Primavera II", "Nossa Horta", "Mix Mateus"], "falta": "O do seu bairro?"},
+    {"tipo": "campo", "texto": "Falta o do seu bairro?\nComenta ==só o nome.==", "placeholder": "Mercado do seu bairro", "botao": "Publicar",
+     "sub": "A gente conta os pedidos. Os mais citados entram primeiro."},
+    {"tipo": "post", "texto": "Não quer esperar?\n==Cadastra você mesmo.==", "sub": "Qualquer pessoa pode adicionar um mercado no app e registrar o primeiro preço dele.",
+     "meta": ["localprice.com.br", "Grátis"]},
+    {"tipo": "cta", "texto": "Marca aqui quem ==sempre compra== nesse mercado.", "sub": "Quanto mais gente registrando, mais Altamira economiza.",
+     "meta": ["Cadastro grátis", "localprice.com.br"]}
+  ]
+}
