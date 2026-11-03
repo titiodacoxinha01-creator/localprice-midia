@@ -40,7 +40,7 @@
     },
     {
       "tipo": "fotos",
-      "faixa": "Caso 1: mesmo dia, mesmo produto",
+      "faixa": "Caso 1: mesmo dia",
       "titulo": "Erva-mate Barão\ntereré 500 g",
       "titulo_menor": true,
       "fotos": [
@@ -116,7 +116,7 @@
       ],
       "selo": "Divida pelo litro",
       "aviso": "Marcas diferentes · 11/09 e 17/09/2026",
-      "altura": 420
+      "altura": 390
     },
     {
       "tipo": "fotos",

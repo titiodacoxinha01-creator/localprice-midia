@@ -1,7 +1,7 @@
 """Copia as peças prontas de estudio/saida/<id>/ para midia/AAAA-MM/ e mostra os links públicos.
 
 Uso:
-    python3 estudio/publicar.py <id> [<id> ...]
+    python3 estudio/publicar.py <id> [<id> ...] [--versao v2]   (use --versao ao republicar algo já agendado)
 Depois: git add midia && git commit && git push (branch gh-pages). O link fica no ar em 1 a 2 minutos.
 """
 import glob, os, shutil, sys
@@ -10,8 +10,9 @@ AQUI = os.path.dirname(os.path.abspath(__file__))
 RAIZ = os.path.dirname(AQUI)
 BASE = "https://titiodacoxinha01-creator.github.io/localprice-midia"
 
-def publicar(ident):
+def publicar(ident, versao=""):
     mes = ident[:7] if ident[:4].isdigit() else "avulsos"
+    if versao: mes = f"{mes}/{versao}"   # nova pasta = link novo, sem cache da versão anterior
     destino = os.path.join(RAIZ, "midia", mes); os.makedirs(destino, exist_ok=True)
     arquivos = sorted(glob.glob(os.path.join(AQUI, "saida", ident, f"{ident}*.jpg")) +
                       glob.glob(os.path.join(AQUI, "saida", ident, f"{ident}*.mp4")))
@@ -22,4 +23,7 @@ def publicar(ident):
 
 if __name__ == "__main__":
     if len(sys.argv) < 2: sys.exit(__doc__)
-    for i in sys.argv[1:]: publicar(i)
+    args = sys.argv[1:]; versao = ""
+    if "--versao" in args:
+        k = args.index("--versao"); versao = args[k + 1]; del args[k:k + 2]
+    for i in args: publicar(i, versao)

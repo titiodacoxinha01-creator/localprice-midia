@@ -14,8 +14,8 @@ AQUI = os.path.dirname(os.path.abspath(__file__))
 ASSETS = os.path.join(AQUI, "assets")
 GRAVACAO = os.path.join(ASSETS, "gravacoes", "tela-registrar-preco.mp4")
 W, H, FPS, SR = 1080, 1920, 30, 44100
-VERDE = "0x2F6B3A"
-FONTES = "/usr/share/fonts/opentype/inter"
+VERDE = "0x568F60"  # verde economia do app
+FONTES = os.path.join(ASSETS, "fontes")  # Nunito (títulos do app); Inter vem do sistema
 
 def run(cmd):
     r = subprocess.run(cmd, capture_output=True, text=True)
@@ -173,11 +173,11 @@ def cena_fim(trab, nome, dur):
     return dur
 
 # ---------------------------------------------------------------- textos (ASS)
-AM, BR = "&H004DE1FF&", "&H00FFFFFF&"
+AM, BR = "&H0069D2FC&", "&H00FFFFFF&"  # amarelo oferta #FCD269 (ASS usa BGR) e branco
 POP = "\\fscx0\\fscy0\\t(0,170,\\fscx110\\fscy110)\\t(170,280,\\fscx100\\fscy100)"
-ESTILOS = {"giga": ("Inter Black", 200, 6), "grande": ("Inter Black", 116, 5), "medio": ("Inter Black", 80, 4),
+ESTILOS = {"giga": ("Nunito Black", 200, 6), "grande": ("Nunito Black", 116, 5), "medio": ("Nunito Black", 80, 4),
            "sub": ("Inter SemiBold", 54, 3), "pequeno": ("Inter Medium", 36, 2), "forma": ("Inter", 40, 0),
-           "etiqueta": ("Inter Black", 60, 0), "num": ("Inter Black", 70, 0)}
+           "etiqueta": ("Nunito Black", 60, 0), "num": ("Nunito Black", 70, 0)}
 LARG = {"giga": 0.50, "grande": 0.50, "medio": 0.50, "sub": 0.50, "pequeno": 0.50, "etiqueta": 0.52}  # largura média por caractere / tamanho
 
 def ts(t): t = max(0, t); return f"0:{int(t // 60):02d}:{t % 60:05.2f}"
@@ -250,7 +250,7 @@ def reel(cfg):
         if c.get("passo"):
             p = c["passo"]
             dlg(s, e, "forma", f"{{\\an5\\pos(150,220)\\p1\\c{AM}\\bord0\\shad0{POP}}}{ellipse(124, 124)}{{\\p0}}", 2)
-            dlg(s, e, "num", f"{{\\pos(150,224)\\c&H111111&{POP}}}{p['n']}", 3)
+            dlg(s, e, "num", f"{{\\pos(150,224)\\c&H212121&{POP}}}{p['n']}", 3)
             dlg(s, e, "medio", f"{{\\an4\\pos(245,185)\\fs64\\fad(100,80)\\move(215,185,245,185,0,180)}}{marcar(p['l1'])}", 3)
             dlg(s, e, "medio", f"{{\\an4\\pos(245,262)\\fs64\\c{AM}\\fad(100,80)\\move(215,262,245,262,60,240)}}{marcar(p['l2'])}", 3)
             pops.append(s + 0.02)
@@ -259,15 +259,15 @@ def reel(cfg):
         if c.get("selo"):
             se = c["selo"]; a = s + se.get("t", 1.0); cx, cy = se.get("pos", [820, 470])
             dlg(a, e, "forma", f"{{\\an5\\pos({cx},{cy})\\frz8\\p1\\c{AM}\\bord0\\shad10\\4c&H60000000&{POP}}}{rrect(420, 160, 30)}{{\\p0}}", 5)
-            dlg(a, e, "pequeno", f"{{\\pos({cx},{cy - 32})\\frz8\\c&H111111&\\shad0{POP}}}{se['linha1']}", 6)
-            dlg(a, e, "etiqueta", f"{{\\pos({cx},{cy + 30})\\frz8\\fs80\\c&H111111&{POP}}}{se['linha2']}", 6)
+            dlg(a, e, "pequeno", f"{{\\pos({cx},{cy - 32})\\frz8\\c&H212121&\\shad0{POP}}}{se['linha1']}", 6)
+            dlg(a, e, "etiqueta", f"{{\\pos({cx},{cy + 30})\\frz8\\fs80\\c&H212121&{POP}}}{se['linha2']}", 6)
             dings.append(a)
         if c.get("caixa"):
             cx_ = c["caixa"]; a = s + cx_.get("t", 1.5); y = cx_.get("y", 1100); l = cx_["linhas"]
             hh = 80 + 75 * len(l)
             dlg(a, e, "forma", f"{{\\an5\\pos(540,{y})\\p1\\c{AM}\\bord0\\shad8\\4c&H50000000&\\frz-2{POP}}}{rrect(900, hh, 40)}{{\\p0}}", 2)
             for k, linha in enumerate(l):
-                dlg(a, e, "etiqueta", f"{{\\pos(540,{y - (len(l) - 1) * 37 + k * 75})\\frz-2\\c&H111111&{POP}}}{linha}", 3)
+                dlg(a, e, "etiqueta", f"{{\\pos(540,{y - (len(l) - 1) * 37 + k * 75})\\frz-2\\c&H212121&{POP}}}{linha}", 3)
             dings.append(a)
         if c["tipo"] == "fim":
             t = c.get("titulo", ["Manda pra quem", "faz as compras", "**aí em casa.**"])
@@ -275,7 +275,7 @@ def reel(cfg):
                 y = 800 + 120 * k
                 dlg(s + 0.35 + 0.15 * k, e, "grande", f"{{\\pos(540,{y})\\fs100\\fad(150,0)\\move(540,{y + 40},540,{y},0,250)}}{marcar(linha)}")
             dlg(s + 1.6, e, "forma", f"{{\\an5\\pos(540,{800 + 120 * len(t) + 140})\\p1\\c{AM}\\bord0\\shad8\\4c&H50000000&{POP}}}{rrect(760, 130, 65)}{{\\p0}}", 2)
-            dlg(s + 1.6, e, "etiqueta", f"{{\\pos(540,{800 + 120 * len(t) + 140})\\c&H111111&{POP}}}localprice.com.br", 3)
+            dlg(s + 1.6, e, "etiqueta", f"{{\\pos(540,{800 + 120 * len(t) + 140})\\c&H212121&{POP}}}localprice.com.br", 3)
             dlg(s + 2.1, e, "pequeno", f"{{\\pos(540,{800 + 120 * len(t) + 280})\\fad(200,0)}}cadastro grátis · link na bio", 3)
             if c.get("aviso"): dlg(s + 2.1, e, "pequeno", f"{{\\pos(540,1760)\\fs30\\fad(200,0)}}{c['aviso']}", 3)
             pops.append(s + 1.6)

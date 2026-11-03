@@ -34,95 +34,101 @@ CHECK = "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0
 
 CSS_BASE = """
 * { box-sizing: border-box; margin: 0; padding: 0; }
+@font-face { font-family: "Nunito"; font-weight: 900; src: url("FONTES/Nunito-Black.ttf"); }
+@font-face { font-family: "Nunito"; font-weight: 800; src: url("FONTES/Nunito-ExtraBold.ttf"); }
+@font-face { font-family: "Nunito"; font-weight: 700; src: url("FONTES/Nunito-Bold.ttf"); }
 body { background: #222; font-family: "Inter", sans-serif; }
 .post { width: 1080px; height: 1350px; position: relative; overflow: hidden; display: flex; flex-direction: column; }
 """
 
 CSS_ENCARTE = """
-.post { background: #FFD52E; color: #111; }
-.faixa { height: 130px; flex: none; background: #E2231A; color: #fff; display: flex; align-items: center; justify-content: center;
-  font: 900 50px Inter; text-transform: uppercase; padding: 0 40px; text-align: center; }
+.post { background: #FCD269; color: #212121; }
+.faixa { height: 130px; flex: none; background: #568F60; color: #fff; display: flex; align-items: center; justify-content: center;
+  font: 900 52px Nunito; text-transform: uppercase; padding: 0 40px; text-align: center; }
 .meio { flex: 1; display: flex; flex-direction: column; justify-content: space-evenly; align-items: center; padding: 30px 60px; min-height: 0; }
 .rod { flex: none; height: 120px; padding: 0 70px; display: flex; align-items: center; justify-content: space-between; font: 700 30px Inter; }
 .rod img { height: 64px; }
-.num { font: 900 34px Inter; background: #111; color: #FFD52E; border-radius: 40px; padding: 8px 22px; }
-h1 { align-self: stretch; font: 900 108px/0.95 Inter; letter-spacing: -5px; text-transform: uppercase; }
+.num { font: 900 34px Inter; background: #212121; color: #FCD269; border-radius: 40px; padding: 8px 22px; }
+h1 { align-self: stretch; font: 900 108px/0.95 Nunito; letter-spacing: -5px; text-transform: uppercase; }
 h1.m { font-size: 82px; letter-spacing: -3px; line-height: 1; }
-em.d { font-style: normal; color: #E2231A; }
+em.d { font-style: normal; color: #EF4343; }
 .tags { display: flex; gap: 40px; justify-content: center; align-self: stretch; }
-.tag { width: 460px; background: #fff; border: 8px solid #111; border-radius: 28px; padding: 30px 26px 26px; box-shadow: 14px 14px 0 #111; text-align: center; }
+.tag { width: 460px; background: #fff; border: 8px solid #212121; border-radius: 28px; padding: 30px 26px 26px; box-shadow: 14px 14px 0 #212121; text-align: center; }
 .tags .tag:nth-child(1) { transform: rotate(-4deg); } .tags .tag:nth-child(2) { transform: rotate(3deg); }
 .tags.um .tag { transform: scale(1.3) rotate(-3deg); margin: 60px 0; }
 .tag small { display: block; font: 800 42px Inter; text-transform: uppercase; }
-.tag b { display: block; font: 900 112px/1 Inter; letter-spacing: -6px; margin-top: 10px; white-space: nowrap; }
+.tag b { display: block; font: 900 112px/1 Nunito; letter-spacing: -6px; margin-top: 10px; white-space: nowrap; }
 .tag b span { font-size: 50px; letter-spacing: 0; vertical-align: 54px; margin-right: 6px; }
 .tag i { display: block; font: 700 34px Inter; font-style: normal; margin-top: 10px; }
-.tag.vermelho { background: #E2231A; color: #fff; } .tag.verde { background: #1E7A3C; color: #fff; }
+.tag.vermelho { background: #EF4343; color: #fff; } .tag.verde { background: #568F60; color: #fff; }
 .tag.riscado b { text-decoration: line-through 9px; }
-.caixa { align-self: stretch; background: #fff; border: 8px solid #111; border-radius: 28px; box-shadow: 14px 14px 0 #111; padding: 40px 50px;
+.caixa { align-self: stretch; background: #fff; border: 8px solid #212121; border-radius: 28px; box-shadow: 14px 14px 0 #212121; padding: 40px 50px;
   font: 900 72px/1.2 Inter; letter-spacing: -2px; }
 .caixa.centro { text-align: center; }
 .caixa .l { white-space: nowrap; }
-.ok { color: #1E7A3C; } .post.cta .ok { color: #FFD52E; } .caixa em.d { color: #E2231A; }
-.selo { background: #111; color: #FFD52E; font: 900 60px Inter; padding: 22px 44px; border-radius: 18px; transform: rotate(-3deg); max-width: 960px; text-align: center; }
-.selo.vermelho { background: #E2231A; color: #fff; }
+.ok { color: #3F7149; } .post.cta .ok { color: #FCD269; } .caixa em.d { color: #EF4343; }
+.selo { background: #212121; color: #FCD269; font: 900 60px Nunito; padding: 22px 44px; border-radius: 18px; transform: rotate(-3deg); max-width: 960px; text-align: center; }
+.selo.vermelho { background: #EF4343; color: #fff; }
 .lista { list-style: none; align-self: stretch; }
-.lista li { font: 800 62px/1.15 Inter; letter-spacing: -1px; padding: 26px 0 26px 100px; position: relative; border-bottom: 5px solid #111; }
-.lista li::before { content: ""; position: absolute; left: 0; top: 30px; width: 64px; height: 64px; border-radius: 50%; background: #1E7A3C url("CHECK") center/70% no-repeat; }
-.etq { width: 800px; background: #FFE14D; border: 8px solid #111; border-radius: 10px; box-shadow: 14px 14px 0 #111; overflow: hidden; transform: rotate(-2deg); }
-.etq .t { background: #E2231A; color: #FFE14D; font: 900 56px Inter; text-align: center; padding: 14px; }
-.etq .p { font: 900 170px/1 Inter; text-align: center; padding: 26px 0 6px; letter-spacing: -6px; }
+.lista li { font: 800 62px/1.15 Inter; letter-spacing: -1px; padding: 26px 0 26px 100px; position: relative; border-bottom: 5px solid #212121; }
+.lista li::before { content: ""; position: absolute; left: 0; top: 30px; width: 64px; height: 64px; border-radius: 50%; background: #568F60 url("CHECK") center/70% no-repeat; }
+.etq { width: 800px; background: #FCD269; border: 8px solid #212121; border-radius: 10px; box-shadow: 14px 14px 0 #212121; overflow: hidden; transform: rotate(-2deg); }
+.etq .t { background: #EF4343; color: #FCD269; font: 900 56px Inter; text-align: center; padding: 14px; }
+.etq .p { font: 900 170px/1 Nunito; text-align: center; padding: 26px 0 6px; letter-spacing: -6px; }
 .etq .p span { font-size: 60px; vertical-align: 80px; letter-spacing: 0; }
 .etq .dd { display: flex; justify-content: space-between; align-items: center; padding: 10px 30px 26px; font: 800 34px Inter; gap: 20px; }
-.etq .kg { border: 6px solid #E2231A; border-radius: 50%; padding: 10px 18px; white-space: nowrap; }
+.etq .kg { border: 6px solid #EF4343; border-radius: 50%; padding: 10px 18px; white-space: nowrap; }
 .fotos { display: flex; gap: 30px; align-self: stretch; }
-.fcard { flex: 1; min-width: 0; background: #fff; border: 8px solid #111; border-radius: 24px; box-shadow: 12px 12px 0 #111; overflow: hidden; }
-.fcard img { width: 100%; object-fit: cover; display: block; border-bottom: 6px solid #111; }
+.fcard { flex: 1; min-width: 0; background: #fff; border: 8px solid #212121; border-radius: 24px; box-shadow: 12px 12px 0 #212121; overflow: hidden; }
+.fcard img { width: 100%; object-fit: cover; display: block; border-bottom: 6px solid #212121; }
 .fcard .inf { padding: 14px 20px 18px; }
 .fcard small { display: block; font: 800 30px/1.15 Inter; }
 .fcard small span { font-weight: 600; color: #555; }
-.fcard b { display: block; font: 900 86px/1 Inter; letter-spacing: -3px; margin-top: 8px; white-space: nowrap; }
+.fcard b { display: block; font: 900 86px/1 Nunito; letter-spacing: -3px; margin-top: 8px; white-space: nowrap; }
 .fcard b span { font-size: 40px; letter-spacing: 0; vertical-align: 34px; margin-right: 4px; }
 .fcard i { display: block; font: 800 32px Inter; font-style: normal; margin-top: 6px; white-space: nowrap; }
-.fcard.barato b, .fcard.barato i { color: #1E7A3C; } .fcard.caro b, .fcard.caro i { color: #E2231A; }
-.fcard .sel { display: inline-block; background: #1E7A3C; color: #fff; font: 900 26px Inter; padding: 4px 12px; border-radius: 8px; margin-bottom: 8px; text-transform: uppercase; }
-.fcard.caro .sel { background: #E2231A; }
-.post.cta { background: #1E7A3C; color: #fff; }
+.fcard.barato b, .fcard.barato i { color: #3F7149; } .fcard.caro b, .fcard.caro i { color: #EF4343; }
+.fcard .sel { display: inline-block; background: #568F60; color: #fff; font: 900 26px Inter; padding: 4px 12px; border-radius: 8px; margin-bottom: 8px; text-transform: uppercase; }
+.fcard.caro .sel { background: #EF4343; }
+.post.cta { background: #568F60; color: #fff; }
 .post.cta .meio { align-items: flex-start; }
 .post.cta h1 { font-size: 104px; }
 .post.cta .texto { font: 700 58px/1.2 Inter; }
-.post.cta .texto em.d { color: #FFD52E; }
-.post.cta .selo { background: #FFD52E; color: #111; font-size: 52px; }
-.post.cta .rod { color: #fff; } .post.cta .num { background: #FFD52E; color: #111; }
+.post.cta .texto em.d { color: #FCD269; }
+.post.cta .selo { background: #FCD269; color: #212121; font-size: 52px; }
+.post.cta .rod { color: #fff; } .post.cta .num { background: #FCD269; color: #212121; }
 """.replace("CHECK", CHECK)
 
 CSS_PRINT = """
-.post { background: #EDEFEA; align-items: center; justify-content: center; }
-.post.cta { background: #2F6B3A; }
+.post { background: #F5F5F5; align-items: center; justify-content: center; }
+.post.cta { background: #568F60; }
 .card { width: 940px; background: #fff; border-radius: 40px; padding: 56px 60px 44px; box-shadow: 0 30px 80px rgba(0,0,0,.12); max-height: 1250px; overflow: hidden; }
 .perfil { display: flex; align-items: center; gap: 26px; }
 .perfil img { width: 116px; height: 116px; border-radius: 50%; border: 3px solid #e3e3e3; }
-.perfil b { display: block; font: 800 44px Inter; color: #111; }
+.perfil b { display: block; font: 800 44px Inter; color: #212121; }
 .perfil span { font: 500 36px Inter; color: #7a7a7a; }
-p { margin-top: 34px; font: 500 64px/1.2 Inter; color: #111; letter-spacing: -1px; }
-p.g { font-size: 88px; font-weight: 800; letter-spacing: -3px; line-height: 1.05; }
+p { margin-top: 34px; font: 500 64px/1.2 Inter; color: #212121; letter-spacing: -1px; }
+p.g { font-family: Nunito; font-size: 88px; font-weight: 900; letter-spacing: -3px; line-height: 1.05; }
 p.s { font-size: 50px; color: #444; }
-.ok { color: #2F6B3A; font-weight: 800; }
-mark, em.d { background: #FFE14D; padding: 0 8px; border-radius: 8px; font-style: normal; }
+.ok { color: #568F60; font-weight: 800; }
+mark, em.d { background: #FCD269; padding: 0 8px; border-radius: 8px; font-style: normal; }
 .meta { margin-top: 34px; padding-top: 26px; border-top: 2px solid #eee; font: 500 32px Inter; color: #8a8a8a; display: flex; justify-content: space-between; }
-.meta b { color: #2F6B3A; font-weight: 800; }
+.meta b { color: #568F60; font-weight: 800; }
 ul { list-style: none; margin-top: 30px; }
-li { font: 700 54px/1.1 Inter; color: #111; padding: 22px 0 22px 84px; position: relative; border-bottom: 2px solid #f0f0f0; }
-li::before { content: ""; position: absolute; left: 0; top: 22px; width: 56px; height: 56px; border-radius: 50%; background: #2F6B3A url("CHECK") center/70% no-repeat; }
+li { font: 700 54px/1.1 Inter; color: #212121; padding: 22px 0 22px 84px; position: relative; border-bottom: 2px solid #f0f0f0; }
+li::before { content: ""; position: absolute; left: 0; top: 22px; width: 56px; height: 56px; border-radius: 50%; background: #568F60 url("CHECK") center/70% no-repeat; }
 li.falta { color: #999; } li.falta::before { background: #fff; border: 5px dashed #bbb; }
 .campo { margin-top: 34px; border: 3px solid #e3e3e3; border-radius: 26px; padding: 28px 34px; font: 500 46px Inter; color: #999;
   display: flex; justify-content: space-between; align-items: center; gap: 20px; }
-.campo b { color: #2F6B3A; font-weight: 800; white-space: nowrap; }
-.cursor { display: inline-block; width: 5px; height: 52px; background: #2F6B3A; vertical-align: -10px; margin-left: 4px; }
+.campo b { color: #568F60; font-weight: 800; white-space: nowrap; }
+.cursor { display: inline-block; width: 5px; height: 52px; background: #568F60; vertical-align: -10px; margin-left: 4px; }
 .foto { margin-top: 34px; height: 380px; border-radius: 26px; background-size: cover; background-position: center 75%; }
 .pag { position: absolute; bottom: 40px; right: 70px; font: 800 30px Inter; color: #999; }
 .post.cta .pag { color: #cfe3d1; }
 """.replace("CHECK", CHECK)
+
+def _fontes(c):
+    return c.replace("FONTES", "file://" + os.path.join(ASSETS, "fontes"))
 
 def img(nome):
     return "file://" + os.path.join(ASSETS, nome)
@@ -199,7 +205,7 @@ def print_slide(s, i, n, g):
 def montar_html(g):
     est = g["estilo"]; n = len(g["paginas"])
     f = encarte_slide if est == "encarte" else print_slide
-    css = CSS_BASE + (CSS_ENCARTE if est == "encarte" else CSS_PRINT)
+    css = _fontes(CSS_BASE + (CSS_ENCARTE if est == "encarte" else CSS_PRINT))
     corpo = "\n".join(f(s, i + 1, n, g) for i, s in enumerate(g["paginas"]))
     ajuste = """<script>document.fonts.ready.then(() => document.querySelectorAll('.caixa').forEach(c => {
   let t = parseFloat(getComputedStyle(c).fontSize);
