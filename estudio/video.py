@@ -118,9 +118,17 @@ def preparar(trab, foto):
     selo = Image.open(os.path.join(ASSETS, "logos/selo-simbolo.png")).convert("RGBA")
     selo.resize((112, 112), Image.LANCZOS).save(f"{trab}/selo.png")
 
-def cena_foto(trab, nome, dur, z0=1.0, z1=1.1, cx=566, cy=1100, escura=False):
+def recortar_916(origem, destino):
+    from PIL import ImageOps
+    im = ImageOps.exif_transpose(Image.open(origem)).convert("RGB")
+    esc = max(W / im.width, H / im.height)
+    r = im.resize((int(im.width * esc + 0.5), int(im.height * esc + 0.5)), Image.LANCZOS)
+    x, y = (r.width - W) // 2, (r.height - H) // 2
+    r.crop((x, y, x + W, y + H)).save(destino, quality=92)
+
+def cena_foto(trab, nome, dur, z0=1.0, z1=1.1, cx=566, cy=1100, escura=False, src=None):
     n = int(round(dur * FPS)); z = ease(0, dur, z0, z1, f"(on/{FPS})")
-    src = f"{trab}/fundo_blur.png" if escura else f"{trab}/foto.jpg"
+    src = src or (f"{trab}/fundo_blur.png" if escura else f"{trab}/foto.jpg")
     vf = (f"[0:v]scale={W}:{H},zoompan=z='{z}':x='clip({cx}-iw/zoom/2,0,iw-iw/zoom)':y='clip({cy}-ih/zoom/2,0,ih-ih/zoom)'"
           f":d=1:s={W}x{H}:fps={FPS}[b];[b][1:v]overlay=0:0,format=yuv420p[v]")
     run(["ffmpeg", "-y", "-loglevel", "error", "-loop", "1", "-framerate", str(FPS), "-i", src, "-loop", "1", "-i", f"{trab}/grad.png",
@@ -208,14 +216,18 @@ def escrever_ass(path, ev):
 # ---------------------------------------------------------------- reel a partir de JSON
 def reel(cfg):
     pasta = os.path.join(AQUI, "saida", cfg["id"]); trab = os.path.join(pasta, "trab"); os.makedirs(trab, exist_ok=True)
-    preparar(trab, os.path.join(ASSETS, "fotos", cfg.get("foto", "detergente-limpol-599.jpg")))
+    fp = cfg.get("foto", "detergente-limpol-599.jpg")
+    preparar(trab, os.path.join(ASSETS, fp if "/" in fp else os.path.join("fotos", fp)))
     voz = os.path.join(ASSETS, "vozes", cfg.get("voz", "narracao-tutorial.wav"))
     d, avisos = [], []
     for i, c in enumerate(cfg["cenas"]):
         nome = f"c{i}"; tipo = c["tipo"]
         if tipo == "foto":
             z = c.get("zoom", [1.0, 1.1]); f = c.get("foco", [566, 1500])
-            d.append(cena_foto(trab, nome, c["dur"], z[0], z[1], f[0], f[1]))
+            src = None
+            if c.get("foto"):  # foto própria da cena (ex.: "fotos-app/2026-10-19-xxxx.jpg"), recortada em 9:16
+                src = f"{trab}/{nome}_foto.jpg"; recortar_916(os.path.join(ASSETS, c["foto"]), src)
+            d.append(cena_foto(trab, nome, c["dur"], z[0], z[1], f[0], f[1], src=src))
         elif tipo == "fundo":
             d.append(cena_foto(trab, nome, c["dur"], 1.05, 1.0, 540, 960, escura=True))
         elif tipo == "tela":

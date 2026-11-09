@@ -1,0 +1,148 @@
+{
+  "id": "2026-11-11-precos-da-semana",
+  "estilo": "encarte",
+  "aviso": "Preços da comunidade; podem variar",
+  "paginas": [
+    {
+      "tipo": "fotos",
+      "faixa": "Preços da semana em Altamira",
+      "titulo": "O básico de\n**3 a 9 de novembro**",
+      "altura": 400,
+      "fotos": [
+        {
+          "foto": "fotos-app/2026-11-09-da67499c.jpg",
+          "rotulo": "Café Santa Clara 250 g",
+          "preco": "11,99",
+          "foco": "50% 60%"
+        },
+        {
+          "foto": "fotos-app/2026-11-05-91b79913.jpg",
+          "rotulo": "Cenoura, o quilo",
+          "preco": "6,99",
+          "foco": "50% 50%"
+        }
+      ],
+      "selo": "Fotografado pela comunidade",
+      "aviso": "Registrados entre 03 e 09/11/2026"
+    },
+    {
+      "tipo": "fotos",
+      "faixa": "Arroz e feijão",
+      "titulo": "Mix Mateus,\n03/11",
+      "titulo_menor": true,
+      "fotos": [
+        {
+          "foto": "fotos-app/2026-11-03-ecdd6977.jpg",
+          "rotulo": "Arroz Tia Dora|5 kg",
+          "preco": "20,99",
+          "foco": "50% 45%"
+        },
+        {
+          "foto": "fotos-app/2026-11-03-0530a9ee.jpg",
+          "rotulo": "Feijão carioca|Tia Dora 1 kg",
+          "preco": "7,89",
+          "foco": "50% 55%"
+        }
+      ],
+      "selo": "R$ 28,88 os dois",
+      "aviso": "Registrado em 03/11/2026"
+    },
+    {
+      "tipo": "fotos",
+      "faixa": "Açúcar e farinha",
+      "titulo": "Mix Mateus,\n03/11",
+      "titulo_menor": true,
+      "fotos": [
+        {
+          "foto": "fotos-app/2026-11-03-9eecdaa3.jpg",
+          "rotulo": "Açúcar Itajá|2 kg",
+          "preco": "6,39",
+          "foco": "50% 75%"
+        },
+        {
+          "foto": "fotos-app/2026-11-03-04c1c005.jpg",
+          "rotulo": "Farinha de trigo|Três Coroas 1 kg",
+          "preco": "4,09",
+          "foco": "50% 70%"
+        }
+      ],
+      "aviso": "Registrado em 03/11/2026"
+    },
+    {
+      "tipo": "fotos",
+      "faixa": "Café 250 g: dois mercados",
+      "titulo": "Diferença de\n**50 centavos**",
+      "titulo_menor": true,
+      "fotos": [
+        {
+          "foto": "fotos-app/2026-11-09-da67499c.jpg",
+          "rotulo": "Primavera II|Santa Clara",
+          "preco": "11,99",
+          "cor": "barato",
+          "selo": "Mais barato",
+          "foco": "50% 60%"
+        },
+        {
+          "foto": "fotos-app/2026-11-03-3d3b0e78.jpg",
+          "rotulo": "Campeiro|Rancheiro",
+          "preco": "12,49",
+          "foco": "50% 65%"
+        }
+      ],
+      "selo": "Marcas diferentes",
+      "aviso": "09/11 e 03/11/2026"
+    },
+    {
+      "tipo": "fotos",
+      "faixa": "Hortifrúti e limpeza",
+      "titulo": "Cenoura e\nálcool",
+      "titulo_menor": true,
+      "fotos": [
+        {
+          "foto": "fotos-app/2026-11-05-91b79913.jpg",
+          "rotulo": "Cenoura|Nossa Horta",
+          "preco": "6,99",
+          "nota": "por kg",
+          "foco": "50% 50%"
+        },
+        {
+          "foto": "fotos-app/2026-11-09-8ba5ccf6.jpg",
+          "rotulo": "Álcool Sol 1 L|Primavera II",
+          "preco": "9,49",
+          "foco": "50% 70%"
+        }
+      ],
+      "aviso": "05/11 e 09/11/2026"
+    },
+    {
+      "tipo": "conta",
+      "faixa": "A cesta desta semana",
+      "titulo": "6 itens básicos:",
+      "linhas": [
+        "Arroz 5 kg + feijão 1 kg",
+        "+ açúcar 2 kg + farinha 1 kg",
+        "+ café 250 g + cenoura 1 kg",
+        "= **R$ 58,34**"
+      ],
+      "selo": "Com o menor preço registrado de cada um",
+      "aviso": "Soma dos preços acima; podem variar"
+    },
+    {
+      "tipo": "lista",
+      "faixa": "Toda semana tem preço novo",
+      "titulo": "Quer ver o preço da sua lista?",
+      "itens": [
+        "Procure o produto no app",
+        "Veja o preço em cada mercado e a data",
+        "Achou diferente? Fotografe e registre"
+      ],
+      "selo": "É de graça"
+    },
+    {
+      "tipo": "cta",
+      "titulo": "Salva e\nmanda pra quem\nfaz as compras.",
+      "texto": "Esses preços foram fotografados por vizinhos esta semana. **Registre o seu e ajude Altamira a economizar.**",
+      "selo": "Cadastro grátis: localprice.com.br"
+    }
+  ]
+}

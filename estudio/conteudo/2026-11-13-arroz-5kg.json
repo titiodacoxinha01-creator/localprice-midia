@@ -1,0 +1,131 @@
+{
+  "id": "2026-11-13-arroz-5kg",
+  "estilo": "encarte",
+  "aviso": "Preços da comunidade; podem variar",
+  "paginas": [
+    {
+      "tipo": "fotos",
+      "faixa": "Arroz 5 kg em Altamira",
+      "titulo": "De R$ 20,99\na **R$ 29,99**",
+      "altura": 400,
+      "fotos": [
+        {
+          "foto": "fotos-app/2026-11-03-ecdd6977.jpg",
+          "rotulo": "Tia Dora",
+          "preco": "20,99",
+          "cor": "barato",
+          "foco": "50% 45%"
+        },
+        {
+          "foto": "fotos-app/2026-08-26-d86bc6ab.jpg",
+          "rotulo": "Tio João",
+          "preco": "29,99",
+          "cor": "caro",
+          "foco": "50% 75%"
+        }
+      ],
+      "selo": "R$ 9 de diferença no saco de 5 kg",
+      "aviso": "Marcas e datas diferentes"
+    },
+    {
+      "tipo": "conta",
+      "faixa": "6 marcas registradas",
+      "titulo": "Do mais barato ao mais caro:",
+      "linhas": [
+        "Tia Dora: **R$ 20,99**",
+        "Puro Grão: **R$ 20,99**",
+        "Doura: **R$ 21,99**",
+        "Aliança parb.: **R$ 22,99**",
+        "Tio Urbano: **R$ 24,49**",
+        "Tio João: **R$ 29,99**"
+      ],
+      "aviso": "Mix, Primavera II, Milênio e Nossa Horta, de 26/08 a 03/11/2026"
+    },
+    {
+      "tipo": "fotos",
+      "faixa": "As mais em conta",
+      "titulo": "R$ 20,99\nnas duas",
+      "titulo_menor": true,
+      "fotos": [
+        {
+          "foto": "fotos-app/2026-11-03-ecdd6977.jpg",
+          "rotulo": "Tia Dora|Mix, 03/11",
+          "preco": "20,99",
+          "cor": "barato",
+          "foco": "50% 45%"
+        },
+        {
+          "foto": "fotos-app/2026-08-26-d219830f.jpg",
+          "rotulo": "Puro Grão|Primavera, 26/08",
+          "preco": "20,99",
+          "cor": "barato",
+          "foco": "50% 85%"
+        }
+      ],
+      "aviso": "Registrados em 26/08 e 03/11/2026"
+    },
+    {
+      "tipo": "fotos",
+      "faixa": "A marca pesa no bolso",
+      "titulo": "Tio João: **R$ 9**\na mais",
+      "titulo_menor": true,
+      "fotos": [
+        {
+          "foto": "fotos-app/2026-08-27-264fa5ff.jpg",
+          "rotulo": "Tio Urbano|Mix, 27/08",
+          "preco": "24,49",
+          "foco": "50% 35%"
+        },
+        {
+          "foto": "fotos-app/2026-08-26-d86bc6ab.jpg",
+          "rotulo": "Tio João|Primavera, 26/08",
+          "preco": "29,99",
+          "cor": "caro",
+          "foco": "50% 75%"
+        }
+      ],
+      "selo": "Tipo 1 é a mesma classificação",
+      "aviso": "Registrados em 26 e 27/08/2026"
+    },
+    {
+      "tipo": "fotos",
+      "faixa": "Mesmo arroz, mesmo mercado",
+      "titulo": "Tia Dora subiu\n**R$ 1 em 6 semanas**",
+      "titulo_menor": true,
+      "fotos": [
+        {
+          "foto": "fotos-app/2026-09-20-2eb4d7b3.jpg",
+          "rotulo": "20/09|preço de 1 unidade",
+          "preco": "19,99",
+          "foco": "50% 80%"
+        },
+        {
+          "foto": "fotos-app/2026-11-03-ecdd6977.jpg",
+          "rotulo": "03/11|preço de 1 unidade",
+          "preco": "20,99",
+          "cor": "caro",
+          "foco": "50% 45%"
+        }
+      ],
+      "selo": "+5% no Mix Mateus",
+      "aviso": "Mesmo produto e mercado"
+    },
+    {
+      "tipo": "lista",
+      "faixa": "Na hora de escolher",
+      "titulo": "Antes de pôr o saco no carrinho:",
+      "itens": [
+        "Compare o mesmo tipo (tipo 1, parboilizado)",
+        "Olhe o preço de 1 unidade, não o de atacado",
+        "Confira no app o preço de outros mercados"
+      ],
+      "selo": "O item mais caro da cesta"
+    },
+    {
+      "tipo": "cta",
+      "titulo": "Manda pra quem\ncompra o arroz\naí em casa.",
+      "texto": "Todos esses preços foram fotografados por vizinhos no LocalPrice. **Viu um arroz mais barato? Registra lá.**",
+      "selo": "Cadastro grátis: localprice.com.br"
+    }
+  ]
+}

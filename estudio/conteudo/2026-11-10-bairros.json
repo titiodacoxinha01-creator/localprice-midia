@@ -1,0 +1,14 @@
+{
+  "id": "2026-11-10-bairros",
+  "estilo": "print",
+  "paginas": [
+    {"tipo": "post", "texto": "Em que bairro de Altamira a comunidade ==mais registra preço?==", "sub": "Arrasta pra ver o ranking. O seu bairro tá aí?", "meta": ["Dados do app LocalPrice", "até 09/11/2026"]},
+    {"tipo": "lista", "texto": "Preços com foto registrados no app, pelo bairro do mercado:", "grande": false,
+     "itens": ["Esplanada do Xingu: **107**", "Bela Vista: **106**", "Premem: **27**", "Jardim Independente I: **18**", "Centro: **11**", "Mutirão: **8**"],
+     "falta": "O seu bairro?"},
+    {"tipo": "post", "texto": "No topo, o empate quase perfeito: ==107 x 106==", "sub": "Esplanada do Xingu e Bela Vista concentram 3 de cada 4 preços com foto. Os outros bairros ainda têm pouca informação.", "meta": ["285 preços com foto", "fevereiro a novembro de 2026"]},
+    {"tipo": "campo", "texto": "Seu bairro ficou de fora?\nComenta ==o nome dele.==", "placeholder": "Meu bairro é...", "botao": "Publicar",
+     "sub": "E registra um preço no mercado perto de você: é assim que ele entra no mapa."},
+    {"tipo": "cta", "texto": "Marca um vizinho do ==seu bairro== pra ajudar.", "sub": "Quanto mais gente registrando, mais Altamira economiza.", "meta": ["Cadastro grátis", "localprice.com.br"]}
+  ]
+}

@@ -1,0 +1,312 @@
+{
+  "id": "2026-11-15-reel-cenoura",
+  "foto": "fotos-app/2026-09-29-cea0ab99.jpg",
+  "cenas": [
+    {
+      "tipo": "foto",
+      "foto": "fotos-app/2026-09-29-cea0ab99.jpg",
+      "dur": 3.6,
+      "zoom": [
+        1.0,
+        1.08
+      ],
+      "foco": [
+        540,
+        900
+      ],
+      "textos": [
+        {
+          "t": 0.1,
+          "estilo": "grande",
+          "texto": "A cenoura",
+          "pos": [
+            70,
+            220
+          ],
+          "alinhar": "esq"
+        },
+        {
+          "t": 0.5,
+          "estilo": "giga",
+          "tam": 170,
+          "texto": "**baixou!**",
+          "pos": [
+            70,
+            370
+          ],
+          "alinhar": "esq"
+        },
+        {
+          "t": 1.4,
+          "estilo": "sub",
+          "texto": "Primavera II, 29/09: R$ 9,99 o quilo",
+          "pos": [
+            70,
+            500
+          ],
+          "alinhar": "esq",
+          "efeito": "fade"
+        }
+      ]
+    },
+    {
+      "tipo": "foto",
+      "foto": "fotos-app/2026-10-19-3543db57.jpg",
+      "dur": 3.8,
+      "zoom": [
+        1.0,
+        1.08
+      ],
+      "foco": [
+        540,
+        900
+      ],
+      "textos": [
+        {
+          "t": 0.1,
+          "estilo": "sub",
+          "texto": "3 semanas depois, mesmo mercado:",
+          "pos": [
+            70,
+            200
+          ],
+          "alinhar": "esq",
+          "efeito": "fade"
+        },
+        {
+          "t": 0.4,
+          "estilo": "giga",
+          "texto": "**R$ 6,99**",
+          "pos": [
+            70,
+            350
+          ],
+          "alinhar": "esq"
+        },
+        {
+          "t": 0.8,
+          "estilo": "grande",
+          "texto": "o quilo",
+          "pos": [
+            70,
+            480
+          ],
+          "alinhar": "esq",
+          "efeito": "fade"
+        }
+      ],
+      "caixa": {
+        "t": 1.8,
+        "y": 1560,
+        "linhas": [
+          "30% mais barata"
+        ]
+      }
+    },
+    {
+      "tipo": "foto",
+      "foto": "fotos-app/2026-09-14-932e5cd6.jpg",
+      "dur": 3.0,
+      "zoom": [
+        1.05,
+        1.0
+      ],
+      "foco": [
+        540,
+        1000
+      ],
+      "textos": [
+        {
+          "t": 0.1,
+          "estilo": "medio",
+          "texto": "No Nossa Horta:",
+          "pos": [
+            70,
+            250
+          ],
+          "alinhar": "esq",
+          "efeito": "fade"
+        },
+        {
+          "t": 0.3,
+          "estilo": "giga",
+          "tam": 170,
+          "texto": "R$ 8,49",
+          "pos": [
+            70,
+            400
+          ],
+          "alinhar": "esq"
+        },
+        {
+          "t": 0.6,
+          "estilo": "sub",
+          "texto": "o quilo em 14/09",
+          "pos": [
+            70,
+            530
+          ],
+          "alinhar": "esq",
+          "efeito": "fade"
+        }
+      ]
+    },
+    {
+      "tipo": "foto",
+      "foto": "fotos-app/2026-11-05-91b79913.jpg",
+      "dur": 3.4,
+      "zoom": [
+        1.0,
+        1.06
+      ],
+      "foco": [
+        540,
+        1000
+      ],
+      "textos": [
+        {
+          "t": 0.1,
+          "estilo": "medio",
+          "texto": "Agora:",
+          "pos": [
+            70,
+            250
+          ],
+          "alinhar": "esq",
+          "efeito": "fade"
+        },
+        {
+          "t": 0.3,
+          "estilo": "giga",
+          "tam": 170,
+          "texto": "**R$ 6,99**",
+          "pos": [
+            70,
+            400
+          ],
+          "alinhar": "esq"
+        },
+        {
+          "t": 0.6,
+          "estilo": "sub",
+          "texto": "o quilo em 05/11",
+          "pos": [
+            70,
+            530
+          ],
+          "alinhar": "esq",
+          "efeito": "fade"
+        }
+      ],
+      "caixa": {
+        "t": 1.4,
+        "y": 1560,
+        "linhas": [
+          "18% mais barata"
+        ]
+      }
+    },
+    {
+      "tipo": "foto",
+      "foto": "fotos-app/2026-10-14-858cc0fe.jpg",
+      "dur": 3.0,
+      "zoom": [
+        1.0,
+        1.06
+      ],
+      "foco": [
+        540,
+        900
+      ],
+      "textos": [
+        {
+          "t": 0.1,
+          "estilo": "medio",
+          "texto": "E no Mix Mateus:",
+          "pos": [
+            70,
+            250
+          ],
+          "alinhar": "esq",
+          "efeito": "fade"
+        },
+        {
+          "t": 0.3,
+          "estilo": "giga",
+          "tam": 170,
+          "texto": "R$ 7,09",
+          "pos": [
+            70,
+            400
+          ],
+          "alinhar": "esq"
+        },
+        {
+          "t": 0.6,
+          "estilo": "sub",
+          "texto": "o quilo em 14/10",
+          "pos": [
+            70,
+            530
+          ],
+          "alinhar": "esq",
+          "efeito": "fade"
+        }
+      ]
+    },
+    {
+      "tipo": "fundo",
+      "dur": 4.2,
+      "textos": [
+        {
+          "t": 0.1,
+          "estilo": "grande",
+          "tam": 96,
+          "texto": "Hortifrúti muda",
+          "pos": [
+            540,
+            700
+          ]
+        },
+        {
+          "t": 0.3,
+          "estilo": "grande",
+          "tam": 96,
+          "texto": "toda semana.",
+          "pos": [
+            540,
+            820
+          ]
+        },
+        {
+          "t": 1.0,
+          "estilo": "medio",
+          "texto": "**Confira no app**",
+          "pos": [
+            540,
+            1020
+          ]
+        },
+        {
+          "t": 1.2,
+          "estilo": "medio",
+          "texto": "**antes de sair de casa.**",
+          "pos": [
+            540,
+            1110
+          ]
+        }
+      ]
+    },
+    {
+      "tipo": "fim",
+      "dur": 5.0,
+      "titulo": [
+        "Manda pra quem",
+        "faz a feira",
+        "**aí em casa.**"
+      ],
+      "aviso": "Preços informados pela comunidade entre 14/09 e 05/11/2026; podem variar."
+    }
+  ]
+}
