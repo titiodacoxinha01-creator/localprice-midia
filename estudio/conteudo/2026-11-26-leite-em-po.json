@@ -1,0 +1,58 @@
+{
+  "id": "2026-11-26-leite-em-po",
+  "estilo": "encarte",
+  "aviso": "Preços da comunidade; podem variar",
+  "paginas": [
+    {
+      "tipo": "fotos",
+      "faixa": "Mesmo produto, mesmo mercado",
+      "titulo": "Leite em pó:\n**R$ 4,75 a mais**",
+      "altura": 400,
+      "fotos": [
+        {
+          "foto": "fotos-app/2026-08-30-2945b7fd.jpg",
+          "rotulo": "30/08 (oferta)",
+          "preco": "30,90",
+          "cor": "barato",
+          "foco": "50% 75%"
+        },
+        {
+          "foto": "fotos-app/2026-11-10-b6585c5c.jpg",
+          "rotulo": "10/11",
+          "preco": "35,65",
+          "cor": "caro",
+          "foco": "50% 50%"
+        }
+      ],
+      "selo": "+15% em dois meses e meio",
+      "aviso": "CCGL integral 1 kg, Mix Mateus"
+    },
+    {
+      "tipo": "etiqueta",
+      "faixa": "Olha a etiqueta de 10/11",
+      "titulo": "Ela traz dois preços. Qual é o seu?",
+      "oferta": "VAREJO",
+      "preco": "35,65",
+      "produto": "LEITE PÓ CCGL INTEGRAL 1 KG",
+      "destaque": "Atacado: R$ 34,25",
+      "aviso": "Registrado em 10/11/2026"
+    },
+    {
+      "tipo": "lista",
+      "faixa": "Como não pagar mais caro",
+      "titulo": "Antes de levar:",
+      "itens": [
+        "Use o preço de 1 unidade (varejo)",
+        "Atacado só vale se você leva a quantidade",
+        "Oferta acaba: confira a data no app"
+      ],
+      "selo": "O leite em pó é dos itens mais caros da cesta"
+    },
+    {
+      "tipo": "cta",
+      "titulo": "Manda pra quem\ncompra leite\npras crianças.",
+      "texto": "Esses preços foram fotografados por vizinhos no LocalPrice. **Viu mais barato? Registra lá.**",
+      "selo": "Cadastro grátis: localprice.com.br"
+    }
+  ]
+}

@@ -1,0 +1,53 @@
+{
+  "id": "2026-11-24-quiz-cafe",
+  "estilo": "print",
+  "paginas": [
+    {
+      "tipo": "post",
+      "texto": "Quanto custa o café 250 g em Altamira?",
+      "sub": "A) R$ 11,99   B) R$ 12,99   C) R$ 14,99\n\nComenta sua aposta e arrasta pra ver a resposta.",
+      "meta": [
+        "Quiz da semana",
+        "Dados do app LocalPrice"
+      ]
+    },
+    {
+      "tipo": "post",
+      "texto": "Resposta: ==as três.==",
+      "sub": "Depende da marca e do mercado. Olha o que a comunidade já fotografou nas prateleiras de Altamira.",
+      "meta": [
+        "Arrasta",
+        "Preços reais com foto"
+      ]
+    },
+    {
+      "tipo": "lista",
+      "texto": "Café 250 g, do mais barato ao mais caro:",
+      "grande": false,
+      "itens": [
+        "Santa Clara: **R$ 11,99**",
+        "Rancheiro: **R$ 12,49**",
+        "Maratá: **R$ 12,99**",
+        "Pilão: **R$ 14,69**",
+        "Maratá: **R$ 14,99**"
+      ],
+      "sub": "Primavera II (09/11), Campeiro (03 e 13/11), Mix Mateus (11/09) e Castro Perto (18/09)."
+    },
+    {
+      "tipo": "post",
+      "texto": "O mesmo Maratá, ==R$ 2 de diferença==",
+      "grande": true,
+      "foto": "fotos-app/2026-11-13-5970caf0.jpg",
+      "sub": "R$ 12,99 no Campeiro (13/11) e R$ 14,99 no Castro Perto (18/09). Datas diferentes; podem variar."
+    },
+    {
+      "tipo": "cta",
+      "texto": "E aí em casa, ==qual é o café?==",
+      "sub": "Comenta a marca. E se viu um preço melhor, registra no app.",
+      "meta": [
+        "Cadastro grátis",
+        "localprice.com.br"
+      ]
+    }
+  ]
+}

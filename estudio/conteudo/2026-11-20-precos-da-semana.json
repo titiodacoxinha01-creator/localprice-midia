@@ -1,0 +1,139 @@
+{
+  "id": "2026-11-20-precos-da-semana",
+  "estilo": "encarte",
+  "aviso": "Preços da comunidade; podem variar",
+  "paginas": [
+    {
+      "tipo": "fotos",
+      "faixa": "Preços da semana em Altamira",
+      "titulo": "O básico de\n**10 a 18 de novembro**",
+      "altura": 400,
+      "fotos": [
+        {
+          "foto": "fotos-app/2026-11-18-26300258.jpg",
+          "rotulo": "Limão taiti, o quilo",
+          "preco": "11,19",
+          "foco": "50% 60%"
+        },
+        {
+          "foto": "fotos-app/2026-11-10-28a90257.jpg",
+          "rotulo": "Espaguete 400 g",
+          "preco": "2,05",
+          "foco": "50% 75%"
+        }
+      ],
+      "selo": "Fotografado pela comunidade",
+      "aviso": "Registrados entre 10 e 18/11/2026"
+    },
+    {
+      "tipo": "fotos",
+      "faixa": "Despensa",
+      "titulo": "Mix Mateus,\n10/11",
+      "titulo_menor": true,
+      "fotos": [
+        {
+          "foto": "fotos-app/2026-11-10-28a90257.jpg",
+          "rotulo": "Espaguete Tia Dora|400 g",
+          "preco": "2,05",
+          "foco": "50% 75%"
+        },
+        {
+          "foto": "fotos-app/2026-11-10-065dc4af.jpg",
+          "rotulo": "Leite condensado|Triângulo 395 g",
+          "preco": "5,89",
+          "foco": "50% 70%"
+        }
+      ],
+      "aviso": "Registrado em 10/11/2026"
+    },
+    {
+      "tipo": "fotos",
+      "faixa": "Geladeira",
+      "titulo": "Mix Mateus,\n10/11",
+      "titulo_menor": true,
+      "fotos": [
+        {
+          "foto": "fotos-app/2026-11-10-814c8982.jpg",
+          "rotulo": "Manteiga Italac|com sal 500 g",
+          "preco": "17,90",
+          "foco": "50% 60%"
+        },
+        {
+          "foto": "fotos-app/2026-11-10-e947c942.jpg",
+          "rotulo": "Coxa e sobrecoxa|Lar",
+          "preco": "9,29",
+          "nota": "o quilo (varejo)",
+          "foco": "50% 60%"
+        }
+      ],
+      "selo": "Atacado do frango: R$ 8,99",
+      "aviso": "Registrado em 10/11/2026"
+    },
+    {
+      "tipo": "fotos",
+      "faixa": "Limão: dois mercados",
+      "titulo": "Diferença de\n**R$ 1,76 no quilo**",
+      "titulo_menor": true,
+      "fotos": [
+        {
+          "foto": "fotos-app/2026-11-18-26300258.jpg",
+          "rotulo": "Primavera II|18/11",
+          "preco": "11,19",
+          "nota": "por kg",
+          "cor": "barato",
+          "selo": "Mais barato",
+          "foco": "50% 60%"
+        },
+        {
+          "foto": "fotos-app/2026-11-16-c38a54fe.jpg",
+          "rotulo": "Milênio|16/11",
+          "preco": "12,95",
+          "nota": "por kg",
+          "cor": "caro",
+          "foco": "50% 70%"
+        }
+      ],
+      "aviso": "16/11 e 18/11/2026"
+    },
+    {
+      "tipo": "fotos",
+      "faixa": "Hortifrúti",
+      "titulo": "Cebola e\nabacate",
+      "titulo_menor": true,
+      "fotos": [
+        {
+          "foto": "fotos-app/2026-11-16-4b2f958f.jpg",
+          "rotulo": "Cebola|Milênio",
+          "preco": "8,50",
+          "nota": "por kg",
+          "foco": "50% 70%"
+        },
+        {
+          "foto": "fotos-app/2026-11-18-e6dcca42.jpg",
+          "rotulo": "Abacate margarida|Primavera II",
+          "preco": "8,89",
+          "nota": "por kg",
+          "foco": "50% 60%"
+        }
+      ],
+      "aviso": "16/11 e 18/11/2026"
+    },
+    {
+      "tipo": "lista",
+      "faixa": "Dica da semana",
+      "titulo": "Antes de pôr no carrinho:",
+      "itens": [
+        "Hortifrúti: compare o preço do quilo",
+        "Carne e frango: veja varejo e atacado",
+        "Achou diferente? Fotografe e registre"
+      ],
+      "selo": "É de graça"
+    },
+    {
+      "tipo": "cta",
+      "titulo": "Salva e\nmanda pra quem\nfaz as compras.",
+      "texto": "Esses preços foram fotografados por vizinhos esta semana. **Registre o seu e ajude Altamira a economizar.**",
+      "selo": "Cadastro grátis: localprice.com.br"
+    }
+  ]
+}

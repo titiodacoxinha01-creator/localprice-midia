@@ -1,0 +1,187 @@
+{
+  "id": "2026-11-22-reel-limao",
+  "foto": "fotos-app/2026-11-18-26300258.jpg",
+  "cenas": [
+    {
+      "tipo": "foto",
+      "foto": "fotos-app/2026-11-18-26300258.jpg",
+      "dur": 3.6,
+      "zoom": [
+        1.0,
+        1.08
+      ],
+      "foco": [
+        540,
+        1000
+      ],
+      "textos": [
+        {
+          "t": 0.1,
+          "estilo": "grande",
+          "texto": "Limão a",
+          "pos": [
+            70,
+            220
+          ],
+          "alinhar": "esq"
+        },
+        {
+          "t": 0.4,
+          "estilo": "giga",
+          "texto": "**R$ 11,19**",
+          "pos": [
+            70,
+            380
+          ],
+          "alinhar": "esq"
+        },
+        {
+          "t": 1.2,
+          "estilo": "sub",
+          "texto": "o quilo no Primavera II, 18/11",
+          "pos": [
+            70,
+            510
+          ],
+          "alinhar": "esq",
+          "efeito": "fade"
+        }
+      ]
+    },
+    {
+      "tipo": "foto",
+      "foto": "fotos-app/2026-11-16-c38a54fe.jpg",
+      "dur": 3.6,
+      "zoom": [
+        1.0,
+        1.08
+      ],
+      "foco": [
+        540,
+        1000
+      ],
+      "textos": [
+        {
+          "t": 0.1,
+          "estilo": "medio",
+          "texto": "No Milênio:",
+          "pos": [
+            70,
+            220
+          ],
+          "alinhar": "esq",
+          "efeito": "fade"
+        },
+        {
+          "t": 0.3,
+          "estilo": "giga",
+          "texto": "R$ 12,95",
+          "pos": [
+            70,
+            380
+          ],
+          "alinhar": "esq"
+        },
+        {
+          "t": 0.8,
+          "estilo": "sub",
+          "texto": "o quilo em 16/11",
+          "pos": [
+            70,
+            510
+          ],
+          "alinhar": "esq",
+          "efeito": "fade"
+        }
+      ]
+    },
+    {
+      "tipo": "fundo",
+      "dur": 4.2,
+      "textos": [
+        {
+          "t": 0.1,
+          "estilo": "grande",
+          "tam": 100,
+          "texto": "R$ 1,76 a mais",
+          "pos": [
+            540,
+            640
+          ]
+        },
+        {
+          "t": 0.3,
+          "estilo": "grande",
+          "tam": 100,
+          "texto": "**em cada quilo.**",
+          "pos": [
+            540,
+            770
+          ]
+        }
+      ],
+      "caixa": {
+        "t": 1.4,
+        "y": 1060,
+        "linhas": [
+          "Levou 2 kg?",
+          "São R$ 3,52 de diferença"
+        ]
+      }
+    },
+    {
+      "tipo": "fundo",
+      "dur": 3.6,
+      "textos": [
+        {
+          "t": 0.1,
+          "estilo": "grande",
+          "tam": 96,
+          "texto": "Hortifrúti muda",
+          "pos": [
+            540,
+            700
+          ]
+        },
+        {
+          "t": 0.3,
+          "estilo": "grande",
+          "tam": 96,
+          "texto": "toda semana.",
+          "pos": [
+            540,
+            820
+          ]
+        },
+        {
+          "t": 1.0,
+          "estilo": "medio",
+          "texto": "**Confira no app**",
+          "pos": [
+            540,
+            1020
+          ]
+        },
+        {
+          "t": 1.2,
+          "estilo": "medio",
+          "texto": "**antes de sair de casa.**",
+          "pos": [
+            540,
+            1110
+          ]
+        }
+      ]
+    },
+    {
+      "tipo": "fim",
+      "dur": 5.0,
+      "titulo": [
+        "Manda pra quem",
+        "faz a feira",
+        "**aí em casa.**"
+      ],
+      "aviso": "Preços informados pela comunidade em 16 e 18/11/2026; podem variar."
+    }
+  ]
+}

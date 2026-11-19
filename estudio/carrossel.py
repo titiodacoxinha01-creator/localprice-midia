@@ -194,7 +194,7 @@ def print_slide(s, i, n, g):
     if tipo == "campo":
         c.append(f'<div class="campo"><span>{md(s.get("placeholder", ""))}<span class="cursor"></span></span><b>{md(s.get("botao", "Publicar"))}</b></div>')
     if s.get("foto"):
-        c.append(f'<div class="foto" style="background-image:url({img("fotos/" + s["foto"])})"></div>')
+        c.append(f'<div class="foto" style="background-image:url({img(s["foto"] if "/" in s["foto"] else "fotos/" + s["foto"])})"></div>')
     if s.get("sub"): c.append(f'<p class="s">{md(s["sub"])}</p>')
     if s.get("meta"):
         a, b = (s["meta"] + ["", ""])[:2]
