@@ -254,7 +254,7 @@ def reel(cfg):
             anim = POP if tx.get("efeito", "pop") == "pop" else "\\fad(120,0)"
             dlg(a, e, est, f"{{{al}\\pos({x},{y}){fs}{cor}{anim}}}{marcar(tx['texto'])}")
             if anim == POP: pops.append(a)
-            tam = tx.get("tam", ESTILOS[est][1]); larg = len(re.sub(r"\*\*", "", tx["texto"])) * tam * LARG.get(est, 0.6)
+            tam = tx.get("tam", ESTILOS[est][1]); larg = len(re.sub(r"\*\*|\+\+", "", tx["texto"])) * tam * LARG.get(est, 0.6)
             borda = x + larg if al else x + larg / 2
             if borda > W - 30 or (not al and x - larg / 2 < 30):
                 avisos.append(f"cena {i + 1}: texto pode não caber na largura: \"{tx['texto']}\" (diminua 'tam' ou quebre em duas linhas)")

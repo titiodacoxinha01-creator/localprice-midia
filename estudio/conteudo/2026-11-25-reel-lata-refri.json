@@ -1,0 +1,282 @@
+{
+  "id": "2026-11-25-reel-lata-refri",
+  "foto": "fotos-app/2026-09-17-777c03c8.jpg",
+  "cenas": [
+    {
+      "tipo": "fundo",
+      "dur": 2.8,
+      "textos": [
+        {
+          "t": 0.1,
+          "estilo": "grande",
+          "texto": "Vai comprar refri",
+          "pos": [
+            540,
+            660
+          ],
+          "tam": 100
+        },
+        {
+          "t": 0.4,
+          "estilo": "grande",
+          "texto": "pro fim de ano?",
+          "pos": [
+            540,
+            790
+          ],
+          "tam": 100
+        }
+      ],
+      "caixa": {
+        "t": 1.2,
+        "y": 1040,
+        "linhas": [
+          "Olha a diferença na lata"
+        ]
+      }
+    },
+    {
+      "tipo": "foto",
+      "foto": "fotos-app/2026-09-17-777c03c8.jpg",
+      "dur": 3.4,
+      "zoom": [
+        1.0,
+        1.06
+      ],
+      "foco": [
+        560,
+        1300
+      ],
+      "circulo": {
+        "t": 0.8,
+        "pos": [
+          560,
+          1300
+        ],
+        "tam": [
+          560,
+          240
+        ]
+      },
+      "textos": [
+        {
+          "t": 0.1,
+          "estilo": "medio",
+          "texto": "Lata 350 ml no Mix Mateus:",
+          "pos": [
+            70,
+            220
+          ],
+          "alinhar": "esq",
+          "efeito": "fade"
+        },
+        {
+          "t": 0.3,
+          "estilo": "giga",
+          "texto": "++R$ 3,89++",
+          "pos": [
+            70,
+            380
+          ],
+          "alinhar": "esq"
+        },
+        {
+          "t": 0.9,
+          "estilo": "sub",
+          "texto": "preço por unidade, 17/09",
+          "pos": [
+            70,
+            510
+          ],
+          "alinhar": "esq",
+          "efeito": "fade"
+        }
+      ]
+    },
+    {
+      "tipo": "foto",
+      "foto": "fotos-app/2026-10-22-77f08044.jpg",
+      "dur": 3.4,
+      "zoom": [
+        1.0,
+        1.06
+      ],
+      "foco": [
+        338,
+        1222
+      ],
+      "circulo": {
+        "t": 0.8,
+        "pos": [
+          338,
+          1222
+        ],
+        "tam": [
+          400,
+          190
+        ]
+      },
+      "textos": [
+        {
+          "t": 0.1,
+          "estilo": "medio",
+          "texto": "No Campeiro:",
+          "pos": [
+            70,
+            220
+          ],
+          "alinhar": "esq",
+          "efeito": "fade"
+        },
+        {
+          "t": 0.3,
+          "estilo": "giga",
+          "texto": "R$ 3,99",
+          "pos": [
+            70,
+            380
+          ],
+          "alinhar": "esq"
+        },
+        {
+          "t": 0.9,
+          "estilo": "sub",
+          "texto": "22/10",
+          "pos": [
+            70,
+            510
+          ],
+          "alinhar": "esq",
+          "efeito": "fade"
+        }
+      ]
+    },
+    {
+      "tipo": "foto",
+      "foto": "fotos-app/2026-10-02-8c57a75c.jpg",
+      "dur": 3.4,
+      "zoom": [
+        1.0,
+        1.06
+      ],
+      "foco": [
+        300,
+        1481
+      ],
+      "circulo": {
+        "t": 0.8,
+        "pos": [
+          300,
+          1481
+        ],
+        "tam": [
+          400,
+          190
+        ]
+      },
+      "textos": [
+        {
+          "t": 0.1,
+          "estilo": "medio",
+          "texto": "No Primavera II:",
+          "pos": [
+            70,
+            220
+          ],
+          "alinhar": "esq",
+          "efeito": "fade"
+        },
+        {
+          "t": 0.3,
+          "estilo": "giga",
+          "texto": "**R$ 4,49**",
+          "pos": [
+            70,
+            380
+          ],
+          "alinhar": "esq"
+        },
+        {
+          "t": 0.9,
+          "estilo": "sub",
+          "texto": "02/10",
+          "pos": [
+            70,
+            510
+          ],
+          "alinhar": "esq",
+          "efeito": "fade"
+        }
+      ]
+    },
+    {
+      "tipo": "fundo",
+      "dur": 4.0,
+      "textos": [
+        {
+          "t": 0.1,
+          "estilo": "grande",
+          "texto": "R$ 0,60 por lata.",
+          "pos": [
+            540,
+            640
+          ],
+          "tam": 100
+        },
+        {
+          "t": 0.4,
+          "estilo": "grande",
+          "texto": "**Num fardo de 12:**",
+          "pos": [
+            540,
+            770
+          ],
+          "tam": 100
+        }
+      ],
+      "caixa": {
+        "t": 1.4,
+        "y": 1060,
+        "linhas": [
+          "R$ 7,20 de diferença"
+        ]
+      }
+    },
+    {
+      "tipo": "fundo",
+      "dur": 3.4,
+      "textos": [
+        {
+          "t": 0.1,
+          "estilo": "grande",
+          "texto": "Antes da festa,",
+          "pos": [
+            540,
+            700
+          ],
+          "tam": 96
+        },
+        {
+          "t": 0.3,
+          "estilo": "grande",
+          "texto": "**confere no app.**",
+          "pos": [
+            540,
+            820
+          ],
+          "tam": 96
+        }
+      ]
+    },
+    {
+      "tipo": "fim",
+      "dur": 5.0,
+      "titulo": [
+        "Marca quem",
+        "leva o refri",
+        "**pro churrasco.**"
+      ],
+      "aviso": "Preços informados pela comunidade em 17/09, 02/10 e 22/10/2026; podem variar."
+    }
+  ]
+}

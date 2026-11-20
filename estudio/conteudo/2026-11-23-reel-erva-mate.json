@@ -1,0 +1,237 @@
+{
+  "id": "2026-11-23-reel-erva-mate",
+  "foto": "fotos-app/2026-09-01-1eb28c24.jpg",
+  "cenas": [
+    {
+      "tipo": "fundo",
+      "dur": 2.8,
+      "textos": [
+        {
+          "t": 0.1,
+          "estilo": "grande",
+          "texto": "Mesmo pacote.",
+          "pos": [
+            540,
+            660
+          ],
+          "tam": 100
+        },
+        {
+          "t": 0.5,
+          "estilo": "grande",
+          "texto": "**Quase o dobro**",
+          "pos": [
+            540,
+            800
+          ],
+          "tam": 110
+        },
+        {
+          "t": 0.8,
+          "estilo": "grande",
+          "texto": "**do preço.**",
+          "pos": [
+            540,
+            930
+          ],
+          "tam": 110
+        }
+      ]
+    },
+    {
+      "tipo": "foto",
+      "foto": "fotos-app/2026-09-01-1eb28c24.jpg",
+      "dur": 3.4,
+      "zoom": [
+        1.0,
+        1.06
+      ],
+      "foco": [
+        319,
+        927
+      ],
+      "circulo": {
+        "t": 0.8,
+        "pos": [
+          319,
+          927
+        ],
+        "tam": [
+          260,
+          170
+        ]
+      },
+      "textos": [
+        {
+          "t": 0.1,
+          "estilo": "medio",
+          "texto": "Erva-mate Barão 500 g:",
+          "pos": [
+            70,
+            220
+          ],
+          "alinhar": "esq",
+          "efeito": "fade"
+        },
+        {
+          "t": 0.3,
+          "estilo": "giga",
+          "texto": "++R$ 12,50++",
+          "pos": [
+            70,
+            380
+          ],
+          "alinhar": "esq"
+        },
+        {
+          "t": 0.9,
+          "estilo": "sub",
+          "texto": "Supermercado Anchieta, 01/09",
+          "pos": [
+            70,
+            510
+          ],
+          "alinhar": "esq",
+          "efeito": "fade"
+        }
+      ]
+    },
+    {
+      "tipo": "foto",
+      "foto": "fotos-app/2026-09-01-0438280e.jpg",
+      "dur": 3.4,
+      "zoom": [
+        1.0,
+        1.06
+      ],
+      "foco": [
+        636,
+        1188
+      ],
+      "circulo": {
+        "t": 0.8,
+        "pos": [
+          636,
+          1188
+        ],
+        "tam": [
+          330,
+          170
+        ]
+      },
+      "textos": [
+        {
+          "t": 0.1,
+          "estilo": "medio",
+          "texto": "No mesmo dia, em outro mercado:",
+          "pos": [
+            70,
+            220
+          ],
+          "alinhar": "esq",
+          "efeito": "fade"
+        },
+        {
+          "t": 0.3,
+          "estilo": "giga",
+          "texto": "R$ 24,65",
+          "pos": [
+            70,
+            380
+          ],
+          "alinhar": "esq"
+        },
+        {
+          "t": 0.9,
+          "estilo": "sub",
+          "texto": "Mercantil Quero, 01/09",
+          "pos": [
+            70,
+            510
+          ],
+          "alinhar": "esq",
+          "efeito": "fade"
+        }
+      ]
+    },
+    {
+      "tipo": "fundo",
+      "dur": 4.0,
+      "textos": [
+        {
+          "t": 0.1,
+          "estilo": "grande",
+          "texto": "R$ 12,15 a mais",
+          "pos": [
+            540,
+            640
+          ],
+          "tam": 100
+        },
+        {
+          "t": 0.3,
+          "estilo": "grande",
+          "texto": "**pelo mesmo pacote.**",
+          "pos": [
+            540,
+            770
+          ],
+          "tam": 100
+        }
+      ],
+      "caixa": {
+        "t": 1.4,
+        "y": 1060,
+        "linhas": [
+          "Tereré todo dia?",
+          "Isso pesa no mês."
+        ]
+      }
+    },
+    {
+      "tipo": "fundo",
+      "dur": 3.4,
+      "textos": [
+        {
+          "t": 0.1,
+          "estilo": "grande",
+          "texto": "Antes de comprar,",
+          "pos": [
+            540,
+            700
+          ],
+          "tam": 96
+        },
+        {
+          "t": 0.3,
+          "estilo": "grande",
+          "texto": "**compare no app.**",
+          "pos": [
+            540,
+            820
+          ],
+          "tam": 96
+        },
+        {
+          "t": 1.0,
+          "estilo": "medio",
+          "texto": "É de graça.",
+          "pos": [
+            540,
+            1010
+          ]
+        }
+      ]
+    },
+    {
+      "tipo": "fim",
+      "dur": 5.0,
+      "titulo": [
+        "Manda pra quem",
+        "não larga",
+        "**o tereré.**"
+      ],
+      "aviso": "Preços informados pela comunidade em 01/09/2026; podem variar."
+    }
+  ]
+}

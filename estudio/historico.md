@@ -14,7 +14,9 @@ Leia antes de planejar. Não repita tema, produto principal ou formato de capa d
 | 20/11 | Encarte | Preços da semana 10 a 18/11 | espaguete, leite condensado, manteiga, frango, limão, cebola, abacate |
 | 20/11 (19h50) | Reel cinematográfico (cenas Gemini, IA marcada) | Inflação: o salário acaba e o mês tá na metade | limão (prova real) |
 | 22/11 | Reel Foto real | Um subiu, outro baixou (mesmo mercado) | Nescau 350 g R$ 10,05 → R$ 11,59; azeite Andorinha 500 ml R$ 40,45 → R$ 28,90 (oferta) |
+| 23/11 | Reel Foto real | Mesmo pacote, quase o dobro do preço | erva-mate Barão 500 g R$ 12,50 (Anchieta) x R$ 24,65 (Mercantil Quero), 01/09 |
 | 24/11 | Print nativo | Quiz do café 250 g | 5 preços de café |
+| 25/11 | Reel Foto real | Refri pro fim de ano: diferença na lata | Coca-Cola lata 350 ml R$ 3,89 (Mix) / R$ 3,99 (Campeiro) / R$ 4,49 (Primavera II) |
 | 26/11 | Encarte | Leite em pó R$ 4,75 a mais | leite em pó CCGL 1 kg |
 
 ## Lições
