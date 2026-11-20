@@ -23,3 +23,4 @@ Leia antes de planejar. Não repita tema, produto principal ou formato de capa d
 - Sempre confira a etiqueta na foto: cadastros errados já trocaram marca (feijão Da Casa x Tia Dora, açúcar Cauaxi x Itajá, óleo Concórdia x ABC), tamanho (água sanitária 1 L x 2 L, ovos 20 x 30) e preço de atacado x varejo.
 - Threads falha com carrossel ("Media container not created"): no Threads, publique só a capa como imagem única, em post separado.
 - O plano do Metricool é gratuito: sem fluxo de aprovação. Rascunho (draft) não é publicado sozinho.
+- Vídeo de fora do Estúdio (ex.: Gemini, 720x1280) falhou no Threads. Antes de agendar, reencode em 1080x1920, 30 fps, H.264 yuv420p e AAC; assim o Threads aceitou.
