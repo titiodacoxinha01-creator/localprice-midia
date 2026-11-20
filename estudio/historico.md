@@ -12,8 +12,8 @@ Leia antes de planejar. Não repita tema, produto principal ou formato de capa d
 | 13/11 | Encarte | Arroz 5 kg de R$ 20,99 a R$ 29,99 | 6 marcas de arroz |
 | 15/11 | Reel Foto real | A cenoura baixou | cenoura R$ 9,99 para R$ 6,99/kg |
 | 20/11 | Encarte | Preços da semana 10 a 18/11 | espaguete, leite condensado, manteiga, frango, limão, cebola, abacate |
-| 21/11 | Reel cinematográfico (cenas Gemini, IA marcada) | Inflação: o salário acaba e o mês tá na metade | limão (prova real) |
-| 22/11 | Reel Foto real | Limão R$ 11,19 x R$ 12,95/kg | limão |
+| 20/11 (19h50) | Reel cinematográfico (cenas Gemini, IA marcada) | Inflação: o salário acaba e o mês tá na metade | limão (prova real) |
+| 22/11 | Reel Foto real | Um subiu, outro baixou (mesmo mercado) | Nescau 350 g R$ 10,05 → R$ 11,59; azeite Andorinha 500 ml R$ 40,45 → R$ 28,90 (oferta) |
 | 24/11 | Print nativo | Quiz do café 250 g | 5 preços de café |
 | 26/11 | Encarte | Leite em pó R$ 4,75 a mais | leite em pó CCGL 1 kg |
 

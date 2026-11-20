@@ -72,7 +72,7 @@ Campos gerais: `id`, `foto` (em `assets/fotos/`), `voz` (em `assets/vozes/`), `c
 | `resultado` | `dur`, `selo {t, pos, linha1, linha2}` | Cartão "Encontramos um preço menor" do app |
 | `fim` | `dur`, `titulo` (3 linhas), `aviso` | Cartão verde com logo, URL e aviso de preços |
 
-Toda cena aceita `textos` (lista de `{t, estilo, texto, pos [x, y], alinhar: "esq", tam, efeito: "pop" ou "fade"}`), `caixa {t, y, linhas}` (caixa amarela) e `voz [início, fim]` (trecho do arquivo de voz que começa junto com a cena).
+Nos textos dos reels, `**x**` fica amarelo e `++x++` fica verde. Toda cena aceita `textos` (lista de `{t, estilo, texto, pos [x, y], alinhar: "esq", tam, efeito: "pop" ou "fade"}`), `caixa {t, y, linhas}` (caixa amarela) e `voz [início, fim]` (trecho do arquivo de voz que começa junto com a cena).
 
 Estilos de texto: `giga` (200 px), `grande` (116), `medio` (80), `sub` (54), `pequeno` (36). Para centralizar, use `pos [540, y]` sem `alinhar`.
 
