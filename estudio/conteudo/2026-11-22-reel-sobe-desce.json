@@ -1,0 +1,291 @@
+{
+  "id": "2026-11-22-reel-sobe-desce",
+  "foto": "fotos-app/2026-11-03-50c9c0d6.jpg",
+  "cenas": [
+    {
+      "tipo": "fundo",
+      "dur": 3.0,
+      "textos": [
+        {
+          "t": 0.1,
+          "estilo": "grande",
+          "tam": 100,
+          "texto": "No mesmo mercado,",
+          "pos": [
+            540,
+            620
+          ]
+        },
+        {
+          "t": 0.5,
+          "estilo": "grande",
+          "tam": 110,
+          "texto": "**um subiu,**",
+          "pos": [
+            540,
+            760
+          ]
+        },
+        {
+          "t": 1.1,
+          "estilo": "grande",
+          "tam": 110,
+          "texto": "++outro baixou.++",
+          "pos": [
+            540,
+            900
+          ]
+        }
+      ],
+      "caixa": {
+        "t": 1.7,
+        "y": 1120,
+        "linhas": [
+          "Qual você compra?"
+        ]
+      }
+    },
+    {
+      "tipo": "foto",
+      "foto": "fotos-app/2026-10-01-3f8ef56a.jpg",
+      "dur": 3.4,
+      "zoom": [
+        1.0,
+        1.08
+      ],
+      "foco": [
+        540,
+        1000
+      ],
+      "textos": [
+        {
+          "t": 0.1,
+          "estilo": "medio",
+          "texto": "Nescau 350 g em outubro:",
+          "pos": [
+            70,
+            220
+          ],
+          "alinhar": "esq",
+          "efeito": "fade"
+        },
+        {
+          "t": 0.3,
+          "estilo": "giga",
+          "texto": "R$ 10,05",
+          "pos": [
+            70,
+            380
+          ],
+          "alinhar": "esq"
+        },
+        {
+          "t": 0.9,
+          "estilo": "sub",
+          "texto": "varejo, Mix Mateus, 01/10",
+          "pos": [
+            70,
+            510
+          ],
+          "alinhar": "esq",
+          "efeito": "fade"
+        }
+      ]
+    },
+    {
+      "tipo": "foto",
+      "foto": "fotos-app/2026-11-03-50c9c0d6.jpg",
+      "dur": 3.4,
+      "zoom": [
+        1.0,
+        1.08
+      ],
+      "foco": [
+        540,
+        1000
+      ],
+      "textos": [
+        {
+          "t": 0.1,
+          "estilo": "medio",
+          "texto": "Em novembro:",
+          "pos": [
+            70,
+            220
+          ],
+          "alinhar": "esq",
+          "efeito": "fade"
+        },
+        {
+          "t": 0.3,
+          "estilo": "giga",
+          "texto": "**R$ 11,59**",
+          "pos": [
+            70,
+            380
+          ],
+          "alinhar": "esq"
+        },
+        {
+          "t": 0.9,
+          "estilo": "sub",
+          "texto": "03/11: R$ 1,54 a mais em um mês",
+          "pos": [
+            70,
+            510
+          ],
+          "alinhar": "esq",
+          "efeito": "fade"
+        }
+      ]
+    },
+    {
+      "tipo": "foto",
+      "foto": "fotos-app/2026-05-09-64d86e7c.jpg",
+      "dur": 3.4,
+      "zoom": [
+        1.0,
+        1.08
+      ],
+      "foco": [
+        540,
+        1000
+      ],
+      "textos": [
+        {
+          "t": 0.1,
+          "estilo": "medio",
+          "texto": "Azeite 500 ml em maio:",
+          "pos": [
+            70,
+            220
+          ],
+          "alinhar": "esq",
+          "efeito": "fade"
+        },
+        {
+          "t": 0.3,
+          "estilo": "giga",
+          "texto": "R$ 40,45",
+          "pos": [
+            70,
+            380
+          ],
+          "alinhar": "esq"
+        },
+        {
+          "t": 0.9,
+          "estilo": "sub",
+          "texto": "Andorinha, varejo, Mix Mateus, 09/05",
+          "pos": [
+            70,
+            510
+          ],
+          "alinhar": "esq",
+          "efeito": "fade"
+        }
+      ]
+    },
+    {
+      "tipo": "foto",
+      "foto": "fotos-app/2026-11-10-a07ce12b.jpg",
+      "dur": 3.4,
+      "zoom": [
+        1.0,
+        1.08
+      ],
+      "foco": [
+        540,
+        1000
+      ],
+      "textos": [
+        {
+          "t": 0.1,
+          "estilo": "medio",
+          "texto": "Em novembro:",
+          "pos": [
+            70,
+            220
+          ],
+          "alinhar": "esq",
+          "efeito": "fade"
+        },
+        {
+          "t": 0.3,
+          "estilo": "giga",
+          "texto": "++R$ 28,90++",
+          "pos": [
+            70,
+            380
+          ],
+          "alinhar": "esq"
+        },
+        {
+          "t": 0.9,
+          "estilo": "sub",
+          "texto": "oferta em 10/11: R$ 11,55 a menos",
+          "pos": [
+            70,
+            510
+          ],
+          "alinhar": "esq",
+          "efeito": "fade"
+        }
+      ]
+    },
+    {
+      "tipo": "fundo",
+      "dur": 3.6,
+      "textos": [
+        {
+          "t": 0.1,
+          "estilo": "grande",
+          "tam": 96,
+          "texto": "Preço não fica",
+          "pos": [
+            540,
+            700
+          ]
+        },
+        {
+          "t": 0.3,
+          "estilo": "grande",
+          "tam": 96,
+          "texto": "parado.",
+          "pos": [
+            540,
+            820
+          ]
+        },
+        {
+          "t": 1.0,
+          "estilo": "medio",
+          "texto": "**Confira no app**",
+          "pos": [
+            540,
+            1020
+          ]
+        },
+        {
+          "t": 1.2,
+          "estilo": "medio",
+          "texto": "**antes de sair de casa.**",
+          "pos": [
+            540,
+            1110
+          ]
+        }
+      ]
+    },
+    {
+      "tipo": "fim",
+      "dur": 5.0,
+      "titulo": [
+        "Manda pra quem",
+        "faz as compras",
+        "**aí em casa.**"
+      ],
+      "aviso": "Preços informados pela comunidade em 09/05, 01/10, 03/11 e 10/11/2026; podem variar."
+    }
+  ]
+}

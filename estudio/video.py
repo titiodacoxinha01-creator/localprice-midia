@@ -15,6 +15,7 @@ ASSETS = os.path.join(AQUI, "assets")
 GRAVACAO = os.path.join(ASSETS, "gravacoes", "tela-registrar-preco.mp4")
 W, H, FPS, SR = 1080, 1920, 30, 44100
 VERDE = "0x568F60"  # verde economia do app
+VD = "&H0087B47F&"  # verde economia clareado (#7FB487) para texto sobre foto escura
 FONTES = os.path.join(ASSETS, "fontes")  # Nunito (títulos do app); Inter vem do sistema
 
 def run(cmd):
@@ -202,6 +203,7 @@ def ellipse(w, h):
 
 def marcar(t):
     t = t.replace("{", "(").replace("}", ")")
+    t = re.sub(r"\+\+(.+?)\+\+", lambda m: f"{{\\c{VD}}}{m.group(1)}{{\\c{BR}}}", t)
     return re.sub(r"\*\*(.+?)\*\*", lambda m: f"{{\\c{AM}}}{m.group(1)}{{\\c{BR}}}", t)
 
 def escrever_ass(path, ev):
