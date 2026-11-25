@@ -1,0 +1,72 @@
+{
+  "id": "2026-11-29-reel-feijao-carioca",
+  "foto": "fotos-app/2026-11-03-0530a9ee.jpg",
+  "cenas": [
+    {
+      "tipo": "fundo", "dur": 2.8,
+      "textos": [
+        {"t": 0.1, "estilo": "grande", "texto": "Feijão carioca 1 kg:", "pos": [540, 660], "tam": 96},
+        {"t": 0.4, "estilo": "grande", "texto": "**3 marcas, 3 preços**", "pos": [540, 790], "tam": 96}
+      ],
+      "caixa": {"t": 1.2, "y": 1040, "linhas": ["Qual você leva?"]}
+    },
+    {
+      "tipo": "foto", "foto": "fotos-app/2026-11-03-0530a9ee.jpg", "dur": 3.4,
+      "zoom": [1.0, 1.06], "foco": [456, 1109],
+      "circulo": {"t": 0.8, "pos": [456, 1109], "tam": [460, 260]},
+      "textos": [
+        {"t": 0.1, "estilo": "medio", "texto": "Tia Dora no Mix Mateus:", "pos": [70, 220], "alinhar": "esq", "efeito": "fade"},
+        {"t": 0.3, "estilo": "giga", "texto": "++R$ 7,89++", "pos": [70, 380], "alinhar": "esq"},
+        {"t": 0.9, "estilo": "sub", "texto": "pacote de 1 kg, 03/11", "pos": [70, 510], "alinhar": "esq", "efeito": "fade"}
+      ]
+    },
+    {
+      "tipo": "foto", "foto": "fotos-app/2026-11-21-fa6153b9.jpg", "dur": 3.4,
+      "zoom": [1.0, 1.06], "foco": [564, 1152],
+      "circulo": {"t": 0.8, "pos": [564, 1152], "tam": [640, 240]},
+      "textos": [
+        {"t": 0.1, "estilo": "medio", "texto": "Tio Beto no Nossa Horta:", "pos": [70, 220], "alinhar": "esq", "efeito": "fade"},
+        {"t": 0.3, "estilo": "giga", "texto": "R$ 8,99", "pos": [70, 380], "alinhar": "esq"},
+        {"t": 0.9, "estilo": "sub", "texto": "pacote de 1 kg, 21/11", "pos": [70, 510], "alinhar": "esq", "efeito": "fade"}
+      ]
+    },
+    {
+      "tipo": "foto", "foto": "fotos-app/2026-11-21-c66f5bb2.jpg", "dur": 3.4,
+      "zoom": [1.0, 1.06], "foco": [495, 1172],
+      "circulo": {"t": 0.8, "pos": [495, 1172], "tam": [640, 240]},
+      "textos": [
+        {"t": 0.1, "estilo": "medio", "texto": "Joãozinho, Nossa Horta:", "pos": [70, 220], "alinhar": "esq", "efeito": "fade"},
+        {"t": 0.3, "estilo": "giga", "texto": "**R$ 9,99**", "pos": [70, 380], "alinhar": "esq"},
+        {"t": 0.9, "estilo": "sub", "texto": "pacote de 1 kg, 21/11", "pos": [70, 510], "alinhar": "esq", "efeito": "fade"}
+      ]
+    },
+    {
+      "tipo": "fundo", "dur": 4.0,
+      "textos": [
+        {"t": 0.1, "estilo": "grande", "texto": "R$ 2,10 de diferença", "pos": [540, 640], "tam": 96},
+        {"t": 0.4, "estilo": "grande", "texto": "**no mesmo quilo.**", "pos": [540, 770], "tam": 96}
+      ],
+      "caixa": {"t": 1.4, "y": 1060, "linhas": ["Marcas e mercados diferentes"]}
+    },
+    {
+      "tipo": "fundo", "dur": 3.6,
+      "textos": [
+        {"t": 0.1, "estilo": "grande", "texto": "Se a casa usa", "pos": [540, 640], "tam": 96},
+        {"t": 0.3, "estilo": "grande", "texto": "**4 kg no mês:**", "pos": [540, 770], "tam": 96}
+      ],
+      "caixa": {"t": 1.2, "y": 1060, "linhas": ["R$ 8,40 de diferença"]}
+    },
+    {
+      "tipo": "fundo", "dur": 3.2,
+      "textos": [
+        {"t": 0.1, "estilo": "grande", "texto": "Antes da compra,", "pos": [540, 700], "tam": 96},
+        {"t": 0.3, "estilo": "grande", "texto": "**confere no app.**", "pos": [540, 820], "tam": 96}
+      ]
+    },
+    {
+      "tipo": "fim", "dur": 5.0,
+      "titulo": ["Comenta a marca", "de feijão", "**aí de casa.**"],
+      "aviso": "Preços informados pela comunidade em 03/11 e 21/11/2026; podem variar."
+    }
+  ]
+}

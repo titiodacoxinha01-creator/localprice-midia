@@ -1,0 +1,103 @@
+{
+  "id": "2026-12-03-ovo-por-unidade",
+  "estilo": "encarte",
+  "aviso": "Preços da comunidade; podem variar",
+  "paginas": [
+    {
+      "tipo": "fotos",
+      "faixa": "Ovo em Altamira",
+      "titulo": "Quanto custa\n**cada ovo?**",
+      "altura": 400,
+      "fotos": [
+        {
+          "foto": "fotos-app/2026-10-30-2d49b56f.jpg",
+          "rotulo": "Iana|cartela de 20",
+          "preco": "11,99",
+          "foco": "50% 35%"
+        },
+        {
+          "foto": "fotos-app/2026-10-19-f2e5cb51.jpg",
+          "rotulo": "Ovos brancos|cartela de 30",
+          "preco": "21,99",
+          "foco": "50% 65%"
+        }
+      ],
+      "selo": "Faça a conta por unidade",
+      "aviso": "Marcas, tamanhos e datas diferentes"
+    },
+    {
+      "tipo": "conta",
+      "faixa": "A conta",
+      "titulo": "Divida pelo número de ovos:",
+      "linhas": [
+        "Iana 20 un: R$ 11,99 ÷ 20",
+        "= ++R$ 0,60 cada ovo++"
+      ],
+      "aviso": "Mix Mateus, 30/10/2026"
+    },
+    {
+      "tipo": "fotos",
+      "faixa": "Cartela de 30",
+      "titulo": "Mesma quantidade,\npreços diferentes",
+      "titulo_menor": true,
+      "fotos": [
+        {
+          "foto": "fotos-app/2026-11-13-aa7698e9.jpg",
+          "rotulo": "Pavão 30 un|Campeiro, 13/11",
+          "preco": "19,50",
+          "nota": "R$ 0,65 cada",
+          "cor": "barato",
+          "foco": "50% 80%"
+        },
+        {
+          "foto": "fotos-app/2026-10-19-f2e5cb51.jpg",
+          "rotulo": "Ovos brancos 30 un|Primavera II, 19/10",
+          "preco": "21,99",
+          "nota": "R$ 0,73 cada",
+          "cor": "caro",
+          "foco": "50% 65%"
+        }
+      ],
+      "aviso": "Marcas e datas diferentes: 19/10 e 13/11/2026"
+    },
+    {
+      "tipo": "conta",
+      "faixa": "Do menor ao maior",
+      "titulo": "Preço de cada ovo:",
+      "linhas": [
+        "Iana 20 un, Mix: ++R$ 0,60++",
+        "Pavão 30 un, Campeiro: R$ 0,65",
+        "Brancos 30 un, Primavera II: **R$ 0,73**"
+      ],
+      "aviso": "Registrados em 19/10, 30/10 e 13/11/2026"
+    },
+    {
+      "tipo": "conta",
+      "faixa": "Na ponta do lápis",
+      "titulo": "Em 30 ovos:",
+      "linhas": [
+        "Iana a R$ 0,60: R$ 18,00",
+        "Primavera II: R$ 21,99",
+        "Diferença: **cerca de R$ 4**"
+      ],
+      "aviso": "Conta com os preços acima; podem variar"
+    },
+    {
+      "tipo": "lista",
+      "faixa": "Dica",
+      "titulo": "Antes de pegar a cartela:",
+      "itens": [
+        "Cartela maior nem sempre sai mais barata",
+        "Divida o preço pelo número de ovos",
+        "Confira a data do preço no app"
+      ],
+      "selo": "É de graça"
+    },
+    {
+      "tipo": "cta",
+      "titulo": "Manda pra\nquem compra\nos ovos.",
+      "texto": "Preços fotografados por vizinhos. **Viu a cartela mais barata? Registra no app.**",
+      "selo": "Cadastro grátis: localprice.com.br"
+    }
+  ]
+}

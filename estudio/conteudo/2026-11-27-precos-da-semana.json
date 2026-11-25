@@ -1,0 +1,78 @@
+{
+  "id": "2026-11-27-precos-da-semana",
+  "estilo": "encarte",
+  "aviso": "Preços da comunidade; podem variar",
+  "paginas": [
+    {
+      "tipo": "capa",
+      "faixa": "Preços da semana em Altamira",
+      "titulo": "O tomate\n**disparou**",
+      "tags": [
+        {"rotulo": "Tomate, o quilo", "preco": "21,99", "cor": "vermelho", "nota": "Nossa Horta, 21/11"}
+      ],
+      "selo": "Era R$ 8,99 em setembro",
+      "aviso": "Registrado em 21/11/2026"
+    },
+    {
+      "tipo": "fotos",
+      "faixa": "Tomate no mesmo mercado",
+      "titulo": "**R$ 13 a mais**\nno quilo",
+      "titulo_menor": true,
+      "fotos": [
+        {"foto": "fotos-app/2026-09-08-d18e8dd9.jpg", "rotulo": "Tomate|08/09", "preco": "8,99", "nota": "por kg", "cor": "barato", "foco": "60% 50%"},
+        {"foto": "fotos-app/2026-11-21-1381516b.jpg", "rotulo": "Tomate|21/11", "preco": "21,99", "nota": "por kg", "cor": "caro", "foco": "50% 75%"}
+      ],
+      "aviso": "Nossa Horta, 08/09 e 21/11/2026"
+    },
+    {
+      "tipo": "fotos",
+      "faixa": "Feira",
+      "titulo": "Nossa Horta,\n21/11",
+      "titulo_menor": true,
+      "fotos": [
+        {"foto": "fotos-app/2026-11-21-750d2e21.jpg", "rotulo": "Batata", "preco": "8,29", "nota": "por kg", "foco": "50% 70%"},
+        {"foto": "fotos-app/2026-11-21-b2772e34.jpg", "rotulo": "Cebola roxa", "preco": "9,99", "nota": "por kg", "foco": "50% 70%"}
+      ],
+      "aviso": "Registrados em 21/11/2026"
+    },
+    {
+      "tipo": "fotos",
+      "faixa": "Feijão Tio Beto",
+      "titulo": "Nossa Horta,\n21/11",
+      "titulo_menor": true,
+      "fotos": [
+        {"foto": "fotos-app/2026-11-21-5f736ff9.jpg", "rotulo": "Feijão caupi|1 kg", "preco": "7,99", "foco": "50% 75%"},
+        {"foto": "fotos-app/2026-11-21-94f251bf.jpg", "rotulo": "Feijão preto|Tio Beto", "preco": "8,99", "foco": "50% 75%"}
+      ],
+      "aviso": "Registrados em 21/11/2026"
+    },
+    {
+      "tipo": "fotos",
+      "faixa": "Despensa",
+      "titulo": "Arroz e óleo",
+      "titulo_menor": true,
+      "fotos": [
+        {"foto": "fotos-app/2026-11-21-e01a30bd.jpg", "rotulo": "Arroz Andorinha 1 kg|Primavera II, 21/11", "preco": "4,69", "foco": "50% 75%"},
+        {"foto": "fotos-app/2026-11-16-f3d7ba11.jpg", "rotulo": "Óleo ABC 900 ml|Milênio, 16/11", "preco": "8,99", "foco": "50% 75%"}
+      ],
+      "aviso": "Registrados em 16/11 e 21/11/2026"
+    },
+    {
+      "tipo": "lista",
+      "faixa": "Dica da semana",
+      "titulo": "Tomate caro? Antes de levar:",
+      "itens": [
+        "Compare o quilo em dois mercados",
+        "Leve só o que vai usar na semana",
+        "Achou mais barato? Fotografe e registre"
+      ],
+      "selo": "É de graça"
+    },
+    {
+      "tipo": "cta",
+      "titulo": "Salva e\nmanda pra quem\nfaz a feira.",
+      "texto": "Esses preços foram fotografados por vizinhos. **Registre o seu e ajude Altamira a economizar.**",
+      "selo": "Cadastro grátis: localprice.com.br"
+    }
+  ]
+}
